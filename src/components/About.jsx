@@ -261,11 +261,17 @@ export default function About() {
           </div>
         </div>
 
-        {/* 4 Fotografías Originales del Brochure DAIM */}
+        {/* Proyectos e Infraestructura en Operación */}
         <div>
           <div className="flex items-center justify-between mb-4">
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-500">
-              Fotografías Originales del Brochure DAIM
+            <div className="flex items-center space-x-2">
+              <span className="w-3 h-1 bg-[#F26522] rounded-full inline-block" />
+              <span className="text-xs font-extrabold uppercase tracking-widest text-slate-700">
+                Infraestructura & Proyectos en Operación
+              </span>
+            </div>
+            <span className="text-[11px] font-semibold text-slate-400 hidden sm:inline-block">
+              Evidencia técnica en terreno
             </span>
           </div>
 
