@@ -1,0 +1,32 @@
+﻿# Dependencies
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Firebase cache
+.firebase/
+
+# Documents & temporary files
+prompt.txt
+Brochure Informativo DAIM.pdf
+test_daim_engineer_card.png
+brochure_text.txt

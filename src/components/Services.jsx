@@ -1,0 +1,207 @@
+import React from 'react';
+import { 
+  Zap, 
+  Sliders, 
+  Lightbulb, 
+  Layers, 
+  Wrench, 
+  Truck, 
+  ArrowRight,
+  MessageCircle,
+  ShieldAlert
+} from 'lucide-react';
+
+export default function Services() {
+  const servicesList = [
+    {
+      id: 'electricidad',
+      title: 'Instalaciones Eléctricas',
+      subtitle: 'Media & Alta Tensión',
+      desc: 'Montaje, conexión y puesta en marcha de redes de media y alta tensión, transformadores de potencia, acometidas industriales y bancos de condensadores.',
+      image: '/assets/service-card-electrical.jpg',
+      icon: Zap,
+      badge: 'Media & Alta Tensión'
+    },
+    {
+      id: 'automatizacion',
+      title: 'Tableros & Automatización',
+      subtitle: 'Control Industrial & PLC',
+      desc: 'Diseño, ensamble estructurado, cableado y modernización de tableros de control y automatización con integración de PLC, HMI y variadores de frecuencia.',
+      image: '/assets/service-card-wiring.jpg',
+      icon: Sliders,
+      badge: 'Automatización & Control'
+    },
+    {
+      id: 'energia-solar',
+      title: 'Energía Solar & Iluminación',
+      subtitle: 'Sistemas Fotovoltaicos & LED',
+      desc: 'Soluciones fotovoltaicas industriales llave en mano, sistemas solares adaptados para autoconsumo continuo y luminarias viales autónomas.',
+      image: '/assets/service-card-lighting.jpg',
+      icon: Lightbulb,
+      badge: 'Energía Renovable'
+    },
+    {
+      id: 'metalmecanica',
+      title: 'Metalmecánica & Piping',
+      subtitle: 'Tuberías de Proceso & Acero',
+      desc: 'Fabricación y montaje de tuberías de proceso bajo códigos ASME/ASTM, tolvas, esclusas, transportadores mecánicos y estructuras de acero.',
+      image: '/assets/service-card-panel.jpg',
+      icon: Layers,
+      badge: 'Normativas ASME / ASTM'
+    },
+    {
+      id: 'mantenimiento',
+      title: 'Mantenimiento Industrial',
+      subtitle: 'Predictivo, Preventivo & Correctivo',
+      desc: 'Gestión integral de mantenimiento industrial con técnicas predictivas avanzadas de vibraciones, alineación láser y overhaul de maquinaria crítica.',
+      image: '/assets/service-card-maintenance.jpg',
+      icon: Wrench,
+      badge: 'Monitoreo Predictivo'
+    },
+    {
+      id: 'civil-emergencias',
+      title: 'Obras Civiles & Paradas',
+      subtitle: 'Infraestructura & Soporte 24/7',
+      desc: 'Obras civiles pesadas, fundidos de hormigón armado, pisos industriales de alta resistencia, guardavías y cuadrillas de respuesta rápida en paradas de planta.',
+      image: '/assets/service-card-emergency.jpg',
+      icon: Truck,
+      badge: 'Respuesta Rápida 24/7'
+    },
+  ];
+
+  return (
+    <section 
+      id="servicios" 
+      className="py-20 lg:py-28 text-white relative overflow-hidden clip-diagonal-section scroll-mt-16 md:scroll-mt-20 bg-[#0B1E33]"
+    >
+      {/* Background Image: Complejo industrial y subestación al atardecer */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img 
+          src="/assets/services-industrial-bg.jpg" 
+          alt="Infraestructura industrial y eléctrica DAIM S.A.S." 
+          className="w-full h-full object-cover object-center"
+        />
+        {/* Degradado azul marino corporativo para máxima elegancia y legibilidad */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B1E33]/94 via-[#0B1E33]/90 to-[#0B1E33]/96" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#0284C7]/15 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#F26522]/10 via-transparent to-transparent pointer-events-none" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-6">
+        
+        {/* Encabezado de la Sección */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-white/10">
+          <div>
+            <div className="flex items-center space-x-2 text-[#F26522] font-extrabold text-xs sm:text-sm tracking-wider uppercase mb-3">
+              <span className="w-5 h-[2px] bg-[#F26522] inline-block" />
+              <span>Capacidades Técnicas y Montajes EPC</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+              Nuestros Servicios Especializados
+            </h2>
+          </div>
+          <p className="text-slate-300 text-sm sm:text-base max-w-xl mt-4 md:mt-0 font-normal leading-relaxed">
+            Soluciones integrales de ingeniería eléctrica, mecánica, civil y renovables bajo la modalidad de llave en mano para garantizar la continuidad operativa de su industria.
+          </p>
+        </div>
+
+        {/* Grilla de 6 Tarjetas con Imágenes (Estilo Referencial 3x2) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {servicesList.map((srv) => {
+            const Icon = srv.icon;
+            const whatsappUrl = `https://wa.me/593983838317?text=${encodeURIComponent(`Hola DAIM S.A.S., me interesa cotizar y consultar detalles sobre el servicio de ${srv.title}.`)}`;
+
+            return (
+              <div
+                key={srv.id}
+                className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between group border border-slate-100"
+              >
+                {/* Contenedor Superior: Fotografía del Servicio + Badge Circular Flotante */}
+                <div className="relative h-52 sm:h-56 md:h-60 w-full overflow-hidden bg-slate-100">
+                  <img 
+                    src={srv.image} 
+                    alt={srv.title} 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  {/* Sutil viñeta inferior para contraste */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 pointer-events-none" />
+
+                  {/* Icono Circular Flotante idéntico a la referencia */}
+                  <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 flex items-center justify-center z-10 group-hover:bg-[#F26522] group-hover:text-white transition-all duration-300">
+                    <Icon className="w-6 h-6 text-[#F26522] group-hover:text-white transition-colors" />
+                  </div>
+                </div>
+
+                {/* Contenedor Inferior: Textos y Cuadro de Cotización */}
+                <div className="p-6 pt-9 flex-grow flex flex-col justify-between">
+                  <div>
+                    {/* Título del Servicio */}
+                    <h3 className="text-xl font-black text-[#0B1E33] tracking-tight mb-2 group-hover:text-[#F26522] transition-colors">
+                      {srv.title}
+                    </h3>
+
+                    {/* Descripción concisa */}
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                      {srv.desc}
+                    </p>
+                  </div>
+
+                  {/* Cuadro de Cotización */}
+                  <div className="mt-5 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] font-bold text-[#0284C7] bg-[#0284C7]/10 px-2.5 py-0.5 rounded uppercase tracking-wider">
+                        {srv.badge}
+                      </span>
+                      <span className="text-[11px] font-medium text-slate-400">
+                        Atención directa
+                      </span>
+                    </div>
+
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#D9531E] text-white font-extrabold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg transform active:scale-95 group/btn"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      <span>Solicitar Cotización</span>
+                      <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Declaración de Calidad y Compromiso Operativo */}
+        <div className="mt-14 p-6 sm:p-8 bg-[#0C1E32]/90 border-l-4 border-[#F26522] rounded-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-2xl border border-white/10">
+          <div className="flex items-center space-x-4">
+            <div className="p-3 bg-[#F26522]/20 border border-[#F26522]/30 rounded-sm text-[#F26522] flex-shrink-0">
+              <ShieldAlert className="w-6 h-6" />
+            </div>
+            <div>
+              <h4 className="text-base font-black text-white uppercase tracking-wider mb-1">
+                Garantía de Continuidad Operativa
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300 max-w-3xl">
+                En <strong>DAIM S.A.S.</strong>, aplicamos estrictas normas internacionales y metodologías de trabajo seguro para minimizar paradas imprevistas y maximizar la vida útil de sus activos industriales.
+              </p>
+            </div>
+          </div>
+          <a
+            href="https://wa.me/593983838317"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 inline-flex items-center space-x-2 bg-[#F26522] hover:bg-[#E05310] text-white font-black px-6 py-3 text-xs uppercase tracking-wider rounded-sm shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>Hablar con un Ingeniero</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  );
+}
