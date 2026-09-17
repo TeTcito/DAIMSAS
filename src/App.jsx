@@ -1,9 +1,10 @@
-﻿import React from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import MissionExperience from './components/MissionExperience';
+import ContactSection from './components/ContactSection';
 import Contact from './components/Contact';
 import WhatsAppButton from './components/WhatsAppButton';
 
@@ -26,17 +27,20 @@ export default function App() {
         {/* 1. Hero / Banner Principal */}
         <Hero />
 
-        {/* 2. Sobre DAIM (Nosotros, Cita, Sectores, Fotos) */}
-        <About />
-
-        {/* 3. Servicios Especializados (Electricidad, Mecánica, Civil, Servicios Generales) */}
+        {/* 2. Servicios Especializados (Inmediatamente después del Hero) */}
         <Services />
 
-        {/* 4. Misión, Visión, Energía y Generación, y Experiencia en Proyectos */}
+        {/* 3. Sobre DAIM (Nosotros, Cita, Sectores, Fotos) */}
+        <About />
+
+        {/* 4. Misión, Visión, y Energía y Generación */}
         <MissionExperience />
+
+        {/* 5. Apartado de Contáctanos con el nuevo diseño */}
+        <ContactSection />
       </main>
 
-      {/* 5. Contacto Directo, Canales & Footer */}
+      {/* 6. Footer Corporativo */}
       <Contact />
 
       {/* Botón Flotante Permanente de WhatsApp */}

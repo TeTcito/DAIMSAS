@@ -7,9 +7,9 @@ import {
   Wrench, 
   Truck, 
   ArrowRight,
-  MessageCircle,
   ShieldAlert
 } from 'lucide-react';
+import { WhatsAppIcon } from './SocialIcons';
 
 export default function Services() {
   const servicesList = [
@@ -72,7 +72,7 @@ export default function Services() {
   return (
     <section 
       id="servicios" 
-      className="py-20 lg:py-28 text-white relative overflow-hidden clip-diagonal-section scroll-mt-16 md:scroll-mt-20 bg-[#0B1E33]"
+      className="pt-36 sm:pt-44 lg:pt-52 pb-20 lg:pb-28 text-white relative overflow-hidden scroll-mt-16 md:scroll-mt-20 bg-azul-marino-dark"
     >
       {/* Background Image: Complejo industrial y subestación al atardecer */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -82,9 +82,9 @@ export default function Services() {
           className="w-full h-full object-cover object-center"
         />
         {/* Degradado azul marino corporativo para máxima elegancia y legibilidad */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B1E33]/94 via-[#0B1E33]/90 to-[#0B1E33]/96" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#0284C7]/15 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-[#F26522]/10 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-azul-marino-dark/95 via-azul-marino/90 to-azul-marino-dark/95" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-azul-daim/20 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-amarillo-seguridad/10 via-transparent to-transparent pointer-events-none" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-6">
@@ -92,8 +92,8 @@ export default function Services() {
         {/* Encabezado de la Sección */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 pb-6 border-b border-white/10">
           <div>
-            <div className="flex items-center space-x-2 text-[#F26522] font-extrabold text-xs sm:text-sm tracking-wider uppercase mb-3">
-              <span className="w-5 h-[2px] bg-[#F26522] inline-block" />
+            <div className="flex items-center space-x-2 text-amarillo-seguridad font-extrabold text-xs sm:text-sm tracking-wider uppercase mb-3">
+              <span className="w-5 h-[2px] bg-amarillo-seguridad inline-block" />
               <span>Capacidades Técnicas y Montajes EPC</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
@@ -105,7 +105,7 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Grilla de 6 Tarjetas con Imágenes (Estilo Referencial 3x2) */}
+        {/* Grilla de 6 Tarjetas con Imágenes */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {servicesList.map((srv) => {
             const Icon = srv.icon;
@@ -116,7 +116,7 @@ export default function Services() {
                 key={srv.id}
                 className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between group border border-slate-100"
               >
-                {/* Contenedor Superior: Fotografía del Servicio + Badge Circular Flotante */}
+                {/* Contenedor Superior: Fotografía del Servicio */}
                 <div className="relative h-52 sm:h-56 md:h-60 w-full overflow-hidden bg-slate-100">
                   <img 
                     src={srv.image} 
@@ -125,23 +125,23 @@ export default function Services() {
                   />
                   {/* Sutil viñeta inferior para contraste */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 pointer-events-none" />
+                </div>
 
-                  {/* Icono Circular Flotante idéntico a la referencia */}
-                  <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 flex items-center justify-center z-10 group-hover:bg-[#F26522] group-hover:text-white transition-all duration-300">
-                    <Icon className="w-6 h-6 text-[#F26522] group-hover:text-white transition-colors" />
-                  </div>
+                {/* Icono Circular Flotante - 100% visible sin recorte */}
+                <div className="relative -mt-7 ml-6 w-14 h-14 rounded-full bg-white shadow-xl border-2 border-slate-100 flex items-center justify-center z-10 group-hover:bg-azul-daim group-hover:border-azul-daim transition-all duration-300">
+                  <Icon className="w-7 h-7 text-azul-daim group-hover:text-white transition-colors" />
                 </div>
 
                 {/* Contenedor Inferior: Textos y Cuadro de Cotización */}
-                <div className="p-6 pt-9 flex-grow flex flex-col justify-between">
+                <div className="p-6 pt-3 flex-grow flex flex-col justify-between">
                   <div>
                     {/* Título del Servicio */}
-                    <h3 className="text-xl font-black text-[#0B1E33] tracking-tight mb-2 group-hover:text-[#F26522] transition-colors">
+                    <h3 className="text-xl font-black text-azul-marino tracking-tight mb-2 group-hover:text-azul-daim transition-colors">
                       {srv.title}
                     </h3>
 
                     {/* Descripción concisa */}
-                    <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
                       {srv.desc}
                     </p>
                   </div>
@@ -149,7 +149,7 @@ export default function Services() {
                   {/* Cuadro de Cotización */}
                   <div className="mt-5 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
                     <div className="flex items-center justify-between">
-                      <span className="text-[11px] font-bold text-[#0284C7] bg-[#0284C7]/10 px-2.5 py-0.5 rounded uppercase tracking-wider">
+                      <span className="text-[11px] font-extrabold text-azul-daim bg-azul-daim/10 px-2.5 py-0.5 rounded uppercase tracking-wider">
                         {srv.badge}
                       </span>
                       <span className="text-[11px] font-medium text-slate-400">
@@ -161,9 +161,9 @@ export default function Services() {
                       href={whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full py-2.5 px-4 rounded-xl bg-[#F26522] hover:bg-[#D9531E] text-white font-extrabold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg transform active:scale-95 group/btn"
+                      className="w-full py-2.5 px-4 rounded-xl bg-azul-daim hover:bg-azul-daim-hover text-white font-extrabold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg transform active:scale-95 group/btn"
                     >
-                      <MessageCircle className="w-4 h-4" />
+                      <WhatsAppIcon className="w-4 h-4 fill-current text-white" />
                       <span>Solicitar Cotización</span>
                       <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
                     </a>
@@ -176,9 +176,9 @@ export default function Services() {
         </div>
 
         {/* Declaración de Calidad y Compromiso Operativo */}
-        <div className="mt-14 p-6 sm:p-8 bg-[#0C1E32]/90 border-l-4 border-[#F26522] rounded-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-2xl border border-white/10">
+        <div className="mt-14 p-6 sm:p-8 bg-azul-marino/90 border-l-4 border-amarillo-seguridad rounded-sm flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-2xl border border-white/10">
           <div className="flex items-center space-x-4">
-            <div className="p-3 bg-[#F26522]/20 border border-[#F26522]/30 rounded-sm text-[#F26522] flex-shrink-0">
+            <div className="p-3 bg-amarillo-seguridad/20 border border-amarillo-seguridad/40 rounded-sm text-amarillo-seguridad flex-shrink-0">
               <ShieldAlert className="w-6 h-6" />
             </div>
             <div>
@@ -194,9 +194,9 @@ export default function Services() {
             href="https://wa.me/593983838317"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 inline-flex items-center space-x-2 bg-[#F26522] hover:bg-[#E05310] text-white font-black px-6 py-3 text-xs uppercase tracking-wider rounded-sm shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95"
+            className="flex-shrink-0 inline-flex items-center space-x-2 bg-amarillo-seguridad hover:bg-amarillo-seguridad-hover text-azul-marino font-black px-6 py-3 text-xs uppercase tracking-wider rounded-sm shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95"
           >
-            <MessageCircle className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4 fill-current" />
             <span>Hablar con un Ingeniero</span>
           </a>
         </div>

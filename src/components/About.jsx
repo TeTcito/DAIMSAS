@@ -64,7 +64,7 @@ export default function About() {
   ];
 
   return (
-    <section id="nosotros" className="pt-36 sm:pt-44 lg:pt-52 pb-20 lg:pb-28 bg-white relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
+    <section id="nosotros" className="py-20 lg:py-28 bg-white relative overflow-hidden scroll-mt-20 md:scroll-mt-24">
       {/* Background Subtle Geometries */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-slate-50 transform rotate-12 -z-0 pointer-events-none" />
       <div className="absolute bottom-10 left-0 w-80 h-80 bg-blue-50/50 rounded-full blur-3xl -z-0 pointer-events-none" />
@@ -72,19 +72,19 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* ============================================================ */}
-        {/* BLOQUE PRINCIPAL "SOBRE NOSOTROS" (DISEÑO IDÉNTICO A LA REFERENCIA) */}
+        {/* BLOQUE PRINCIPAL "SOBRE NOSOTROS" */}
         {/* ============================================================ */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch mb-20">
           
-          {/* Columna Izquierda: Fotografía de Supervisión e Ingeniería DAIM */}
+          {/* Columna Izquierda: Fotografía de Supervisión e Ingeniería DAIM (Regenerada) */}
           <div className="lg:col-span-5 flex">
-            <div className="relative w-full h-[380px] sm:h-[460px] lg:h-full min-h-[440px] overflow-hidden rounded-sm shadow-xl border border-slate-100">
+            <div className="relative w-full h-[380px] sm:h-[460px] lg:h-full min-h-[440px] overflow-hidden rounded-2xl shadow-xl border border-slate-100">
               <img 
                 src="/assets/about-solid-principles.jpg" 
                 alt="Equipo técnico y de supervisión DAIM S.A.S. planificando planos de obra" 
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-azul-marino-dark/30 via-transparent to-transparent opacity-60 pointer-events-none" />
             </div>
           </div>
 
@@ -92,14 +92,14 @@ export default function About() {
           <div className="lg:col-span-7 flex flex-col justify-between">
             <div>
               
-              {/* Eyebrow con guión naranja idéntico a "— ABOUT STRUCT" */}
-              <div className="flex items-center space-x-2 text-[#F26522] font-extrabold text-xs sm:text-sm tracking-wider uppercase mb-3">
-                <span className="w-5 h-[2px] bg-[#F26522] inline-block" />
+              {/* Eyebrow con guión azul DAIM */}
+              <div className="flex items-center space-x-2 text-azul-daim font-extrabold text-xs sm:text-sm tracking-wider uppercase mb-3">
+                <span className="w-5 h-[2px] bg-azul-daim inline-block" />
                 <span>Sobre DAIM S.A.S.</span>
               </div>
 
               {/* Titular Imponente: "Construidos Sobre Principios Sólidos" */}
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B1E33] tracking-tight leading-[1.12] mb-5">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight leading-[1.12] mb-5">
                 Construidos Sobre<br />
                 Principios Sólidos
               </h2>
@@ -117,14 +117,14 @@ export default function About() {
                   
                   {/* 1. Integridad */}
                   <div className="flex items-start space-x-3.5">
-                    <div className="p-2 border border-[#F26522]/30 rounded-sm bg-orange-50 text-[#F26522] flex-shrink-0 mt-0.5 shadow-sm">
+                    <div className="p-2 border border-azul-daim/30 rounded-lg bg-blue-50 text-azul-daim flex-shrink-0 mt-0.5 shadow-sm">
                       <ShieldCheck className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="font-black text-[#0B1E33] text-base mb-1">
+                      <h4 className="font-black text-azul-marino text-base mb-1">
                         Integridad
                       </h4>
-                      <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
                         Operamos con total transparencia y responsabilidad, honrando cada compromiso contractual y presupuestario con los más altos estándares éticos.
                       </p>
                     </div>
@@ -132,14 +132,14 @@ export default function About() {
 
                   {/* 2. Seguridad */}
                   <div className="flex items-start space-x-3.5">
-                    <div className="p-2 border border-[#F26522]/30 rounded-sm bg-orange-50 text-[#F26522] flex-shrink-0 mt-0.5 shadow-sm">
+                    <div className="p-2 border border-amarillo-seguridad/40 rounded-lg bg-amber-50 text-amber-600 flex-shrink-0 mt-0.5 shadow-sm">
                       <HardHat className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="font-black text-[#0B1E33] text-base mb-1">
+                      <h4 className="font-black text-azul-marino text-base mb-1">
                         Seguridad
                       </h4>
-                      <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
                         La seguridad es no negociable: protocolos rigurosos y 100% EPP integrados transversalmente en planificación, procura y faenas en campo.
                       </p>
                     </div>
@@ -147,38 +147,38 @@ export default function About() {
 
                   {/* 3. Precisión en Ingeniería */}
                   <div className="flex items-start space-x-3.5">
-                    <div className="p-2 border border-[#F26522]/30 rounded-sm bg-orange-50 text-[#F26522] flex-shrink-0 mt-0.5 shadow-sm">
+                    <div className="p-2 border border-celeste-energia/40 rounded-lg bg-sky-50 text-azul-daim flex-shrink-0 mt-0.5 shadow-sm">
                       <Ruler className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="font-black text-[#0B1E33] text-base mb-1">
+                      <h4 className="font-black text-azul-marino text-base mb-1">
                         Precisión en Ingeniería
                       </h4>
-                      <p className="text-xs text-slate-500 leading-relaxed font-normal">
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
                         Entregamos soluciones estructuralmente robustas y montajes electromecánicos confiables mediante ingeniería disciplinada y ejecución milimétrica.
                       </p>
                     </div>
                   </div>
 
-                  {/* Botón "Conocer Más +" Idéntico al Botón Read More de la Referencia */}
+                  {/* Botón "Conocer Más +" con paleta DAIM */}
                   <div className="pt-2">
                     <a 
                       href="#servicios" 
-                      className="inline-flex items-center space-x-2 px-6 py-2.5 bg-white hover:bg-[#F26522] text-[#0B1E33] hover:text-white border-2 border-[#F26522] rounded-sm text-xs font-black uppercase tracking-wider transition-all shadow-sm transform hover:-translate-y-0.5 group"
+                      className="inline-flex items-center space-x-2 px-6 py-2.5 bg-white hover:bg-azul-daim text-azul-marino hover:text-white border-2 border-azul-daim rounded-full text-xs font-black uppercase tracking-wider transition-all shadow-sm transform hover:-translate-y-0.5 group"
                     >
-                      <span>Conocer Más</span>
+                      <span>Conocer Servicios</span>
                       <span className="text-sm font-black transition-transform group-hover:rotate-90 duration-300">+</span>
                     </a>
                   </div>
 
                 </div>
 
-                {/* Sub-columna Derecha: 2 Cajas de Datos Apiladas (Naranja y Negra) */}
+                {/* Sub-columna Derecha: 2 Cajas de Datos Apiladas */}
                 <div className="sm:col-span-5 space-y-4">
                   
-                  {/* Caja 1 Naranja: 150+ Proyectos Completados */}
-                  <div className="bg-[#F26522] text-white p-6 sm:p-7 rounded-sm shadow-md flex flex-col justify-center min-h-[140px]">
-                    <div className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-none mb-2">
+                  {/* Caja 1 Azul DAIM: 150+ Proyectos Completados */}
+                  <div className="bg-azul-daim text-white p-6 sm:p-7 rounded-2xl shadow-industrial flex flex-col justify-center min-h-[140px]">
+                    <div className="text-4xl sm:text-5xl font-black text-amarillo-seguridad tracking-tight leading-none mb-2">
                       150+
                     </div>
                     <div className="text-xs font-bold uppercase tracking-wider text-white/95 leading-tight">
@@ -186,13 +186,13 @@ export default function About() {
                     </div>
                   </div>
 
-                  {/* Caja 2 Negra: Certificaciones & Normas */}
-                  <div className="bg-[#0C0C0C] text-white p-6 sm:p-7 rounded-sm shadow-md flex flex-col justify-center min-h-[160px]">
-                    <Award className="w-7 h-7 text-[#F26522] mb-3 flex-shrink-0" />
+                  {/* Caja 2 Azul Marino Profundo: Certificaciones & Normas */}
+                  <div className="bg-azul-marino text-white p-6 sm:p-7 rounded-2xl shadow-industrial border border-white/10 flex flex-col justify-center min-h-[160px]">
+                    <Award className="w-7 h-7 text-celeste-energia mb-3 flex-shrink-0" />
                     <h5 className="font-black text-white text-sm sm:text-base leading-tight mb-1.5">
                       Certificaciones & Normas
                     </h5>
-                    <p className="text-[11px] text-slate-400 leading-relaxed font-medium">
+                    <p className="text-[11px] text-slate-300 leading-relaxed font-medium">
                       Normativas ASTM, ASME, NEC, IEEE, estándares de seguridad y licenciamiento industrial.
                     </p>
                   </div>
@@ -206,10 +206,10 @@ export default function About() {
         </div>
 
         {/* Cita Destacada Oficial de DAIM */}
-        <div className="relative mb-16 bg-gradient-to-r from-azul-marino via-azul-marino-card to-azul-marino p-6 sm:p-10 text-white shadow-industrial-lg border-l-8 border-[#F26522]">
+        <div className="relative mb-16 bg-gradient-to-r from-azul-marino via-azul-marino-card to-azul-marino p-6 sm:p-10 text-white shadow-industrial-lg border-l-8 border-amarillo-seguridad rounded-2xl">
           <Quote className="absolute right-6 bottom-4 w-24 h-24 text-white/5 pointer-events-none" />
           <div className="relative z-10 max-w-4xl">
-            <span className="text-[#FFC72C] font-bold uppercase tracking-widest text-xs block mb-3">
+            <span className="text-amarillo-seguridad font-bold uppercase tracking-widest text-xs block mb-3">
               Compromiso y Modalidad Llave en Mano
             </span>
             <blockquote className="text-base sm:text-xl lg:text-2xl font-bold leading-snug tracking-tight text-white italic">
@@ -225,7 +225,7 @@ export default function About() {
         {/* 4 Sectores Atendidos (Badges/Chips) */}
         <div className="mb-16">
           <div className="mb-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#F26522]">
+            <span className="text-xs font-bold uppercase tracking-widest text-azul-daim">
               Sectores Atendidos
             </span>
             <h3 className="text-xl sm:text-2xl font-black text-azul-marino tracking-tight mt-1">
@@ -239,17 +239,17 @@ export default function About() {
               return (
                 <div 
                   key={idx}
-                  className="bg-white border-2 border-slate-200 hover:border-[#F26522] p-5 transition-all shadow-sm hover:shadow-md group relative"
+                  className="bg-white border-2 border-slate-200 hover:border-azul-daim p-5 transition-all shadow-sm hover:shadow-md group relative rounded-xl"
                 >
                   <div className="flex items-center justify-between mb-3">
-                    <div className="p-2.5 bg-azul-marino text-celeste-energia group-hover:bg-[#F26522] group-hover:text-white transition-colors">
+                    <div className="p-2.5 bg-azul-marino text-celeste-energia group-hover:bg-azul-daim group-hover:text-white transition-colors rounded-lg">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 bg-slate-100 text-slate-700">
+                    <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 bg-slate-100 text-slate-700 rounded">
                       {sec.badge}
                     </span>
                   </div>
-                  <h4 className="font-extrabold text-base text-azul-marino group-hover:text-[#F26522] transition-colors mb-1">
+                  <h4 className="font-extrabold text-base text-azul-marino group-hover:text-azul-daim transition-colors mb-1">
                     {sec.name}
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
@@ -265,7 +265,7 @@ export default function About() {
         <div>
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center space-x-2">
-              <span className="w-3 h-1 bg-[#F26522] rounded-full inline-block" />
+              <span className="w-3 h-1 bg-azul-daim rounded-full inline-block" />
               <span className="text-xs font-extrabold uppercase tracking-widest text-slate-700">
                 Infraestructura & Proyectos en Operación
               </span>
@@ -279,7 +279,7 @@ export default function About() {
             {thumbnails.map((thumb, idx) => (
               <div 
                 key={idx}
-                className="group relative overflow-hidden border border-slate-200 bg-slate-100 shadow-sm"
+                className="group relative overflow-hidden border border-slate-200 bg-slate-100 shadow-sm rounded-xl"
               >
                 <div className="aspect-[4/3] w-full overflow-hidden">
                   <img 
