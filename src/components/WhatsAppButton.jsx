@@ -1,5 +1,6 @@
-﻿import React, { useState } from 'react';
-import { MessageCircle, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { X } from 'lucide-react';
+import { WhatsAppIcon } from './SocialIcons';
 
 export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(true);
@@ -35,7 +36,7 @@ export default function WhatsAppButton() {
         {/* Available indicator dot */}
         <span className="absolute top-0 right-0 w-3 h-3 bg-amarillo-seguridad border-2 border-azul-marino rounded-full" />
         
-        <MessageCircle className="w-7 h-7 fill-current relative z-10" />
+        <WhatsAppIcon className="w-7 h-7 fill-current relative z-10" />
       </a>
     </div>
   );
