@@ -96,7 +96,7 @@ export default function Services() {
               <span className="w-4 sm:w-5 h-[2px] bg-amarillo-seguridad inline-block" />
               <span>Capacidades Técnicas y Montajes EPC</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-white tracking-tight">
               Nuestros Servicios Especializados
             </h2>
           </div>

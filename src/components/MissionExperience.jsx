@@ -47,7 +47,7 @@ export default function MissionExperience() {
             <span className="text-[11px] sm:text-sm font-extrabold uppercase tracking-widest text-azul-daim block mb-1">
               Capacidad Energética Estratégica
             </span>
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-azul-marino tracking-tight">
               Energía y Generación
             </h2>
             <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed">
@@ -164,7 +164,7 @@ export default function MissionExperience() {
             <span className="text-[11px] sm:text-sm font-extrabold uppercase tracking-widest text-azul-daim block mb-1">
               Filosofía Institucional
             </span>
-            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-azul-marino tracking-tight">
               Misión y Visión
             </h2>
           </div>
