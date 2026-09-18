@@ -49,7 +49,7 @@ export default function ContactSection() {
           <span className="text-[11px] sm:text-sm font-extrabold uppercase tracking-widest text-azul-daim block mb-1">
             Atención Inmediata & Cotizaciones
           </span>
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-azul-marino tracking-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
             Contáctanos
           </h2>
           <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed">

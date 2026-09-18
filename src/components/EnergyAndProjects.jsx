@@ -160,7 +160,7 @@ export default function EnergyAndProjects() {
             <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-azul-daim block mb-1">
               Capacidad Estratégica
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-azul-marino tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
               Energía y Generación
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl font-normal">
@@ -281,7 +281,7 @@ export default function EnergyAndProjects() {
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-azul-daim block mb-1">
                 Portafolio Integral
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-azul-marino tracking-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
                 Experiencia en el Desarrollo de Proyectos
               </h2>
             </div>

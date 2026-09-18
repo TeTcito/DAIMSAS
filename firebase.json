@@ -6,17 +6,6 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "headers": [
-      {
-        "source": "**/*.@(html|json)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=0, no-cache, no-store, must-revalidate"
-          }
-        ]
-      }
-    ],
     "rewrites": [
       {
         "source": "**",

@@ -99,7 +99,7 @@ export default function About() {
               </div>
 
               {/* Titular Imponente: "Construidos Sobre Principios Sólidos" */}
-              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-azul-marino tracking-tight leading-[1.15] mb-3 sm:mb-5">
+              <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight leading-[1.15] mb-3 sm:mb-5">
                 Construidos Sobre<br />
                 Principios Sólidos
               </h2>
