@@ -25,7 +25,7 @@ export default function Contact() {
                   DAIM S.A.S.
                 </span>
                 <span className="text-[9px] sm:text-[10px] text-celeste-energia uppercase tracking-wider font-semibold block">
-                  Diseño Avanzado de Ingeniería y Mantenimiento
+                  Desarrollo Avanzado de Ingeniería y Mantenimiento
                 </span>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function Contact() {
         {/* Bottom Legal & Copyright Bar */}
         <div className="mt-8 pt-6 sm:mt-12 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[10px] sm:text-[11px] text-slate-400 text-center sm:text-left">
           <p>
-            © {currentYear} DAIM S.A.S. (Diseño Avanzado de Ingeniería y Mantenimiento). Todos los derechos reservados.
+            © {currentYear} DAIM S.A.S. (Desarrollo Avanzado de Ingeniería y Mantenimiento). Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-3 sm:space-x-4">
             <span>Guayaquil - Esmeraldas, Ecuador</span>
