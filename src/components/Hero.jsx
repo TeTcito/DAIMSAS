@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
 
           {/* Titular imponente adaptado a pantallas móviles */}
-          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] mb-3 sm:mb-5">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-normal text-white tracking-tight leading-[1.15] mb-3 sm:mb-5">
             Diseño Avanzado de<br />
             Ingeniería y Mantenimiento
           </h1>
