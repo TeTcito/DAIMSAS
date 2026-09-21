@@ -277,12 +277,20 @@ export default function ContactSection() {
                   <AtSign className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="overflow-hidden">
-                  <h4 className="text-xs sm:text-base font-black tracking-tight text-azul-marino truncate" title="gerencia@daimenergy.com">
-                    gerencia@daimenergy.com
-                  </h4>
-                  <p className="text-[11px] sm:text-xs text-slate-500 font-semibold truncate" title="jesusmendez.dai@gmail.com">
+                  <a 
+                    href="mailto:jesusmendez.dai@gmail.com" 
+                    className="block text-xs sm:text-base font-black tracking-tight text-azul-marino hover:text-azul-daim transition-colors truncate" 
+                    title="jesusmendez.dai@gmail.com"
+                  >
                     jesusmendez.dai@gmail.com
-                  </p>
+                  </a>
+                  <a 
+                    href="mailto:gerencia@daimenergy.com" 
+                    className="block text-[11px] sm:text-xs text-slate-500 font-semibold hover:text-azul-daim transition-colors truncate" 
+                    title="gerencia@daimenergy.com"
+                  >
+                    gerencia@daimenergy.com
+                  </a>
                 </div>
               </div>
               <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
@@ -293,7 +301,7 @@ export default function ContactSection() {
             <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-azul-daim/15 flex items-center justify-between text-xs text-azul-marino">
               <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Correos Institucionales:</span>
               <a 
-                href="mailto:gerencia@daimenergy.com" 
+                href="mailto:jesusmendez.dai@gmail.com" 
                 className="font-extrabold text-azul-daim hover:text-azul-marino uppercase tracking-wider text-[10px] sm:text-[11px] transition-colors inline-flex items-center space-x-1"
               >
                 <span>Redactar</span>
@@ -302,26 +310,31 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Card 3: Ubicación */}
+          {/* Card 3: Ubicación & Presencia */}
           <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-8 bg-white border-2 border-slate-200 shadow-sm hover:border-celeste-energia transition-all flex flex-col justify-between text-azul-marino group">
             <div>
               <div className="flex items-center space-x-3 mb-2 sm:mb-4">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-50 border-2 border-azul-marino flex items-center justify-center flex-shrink-0 text-azul-marino group-hover:scale-105 transition-transform">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <h4 className="text-sm sm:text-lg lg:text-xl font-black tracking-tight text-azul-marino truncate whitespace-nowrap">
-                  Quito – Ecuador
-                </h4>
+                <div className="overflow-hidden">
+                  <h4 className="text-xs sm:text-base font-black tracking-tight text-azul-marino truncate" title="Quito · Caracas · Madrid">
+                    Quito · Caracas · Madrid
+                  </h4>
+                  <p className="text-[11px] sm:text-xs text-slate-500 font-semibold truncate" title="Sede: La Morita, Tumbaco, Quito">
+                    Sede: La Morita, Tumbaco, Quito
+                  </p>
+                </div>
               </div>
               <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
-                Sede central de operaciones en Quito con capacidad de despliegue técnico, supervisión y cuadrillas activas a nivel nacional.
+                Sede principal en La Morita, Tumbaco (Quito, Ecuador) con presencia y alcance operativo en Caracas (Venezuela) y Madrid (España).
               </p>
             </div>
 
             <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
-              <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Cobertura Operativa:</span>
+              <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Presencia:</span>
               <span className="font-extrabold text-azul-daim uppercase tracking-wider text-[10px] sm:text-[11px]">
-                A Nivel Nacional
+                Ecuador & Internacional
               </span>
             </div>
           </div>
@@ -331,7 +344,7 @@ export default function ContactSection() {
         {/* FILA 3: MAPA DE GOOGLE EMBEBIDO CON BORDES REDONDEADOS Y ESTILO DAIM */}
         <div className="mt-6 sm:mt-8">
           <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-slate-200 shadow-industrial h-56 sm:h-80 lg:h-96 w-full bg-slate-100">
-            {/* Iframe interactivo de Google Maps enfocado en Quito, Ecuador */}
+            {/* Iframe interactivo de Google Maps enfocado en La Morita, Tumbaco, Quito */}
             <iframe
               title="Ubicación DAIM S.A.S. en Google Maps"
               width="100%"
@@ -340,19 +353,19 @@ export default function ContactSection() {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?q=Quito,%20Ecuador&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=La%20Morita,%20Tumbaco,%20Quito,%20Ecuador&t=&z=14&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full filter contrast-[1.02]"
             />
 
             {/* Tarjeta flotante simulada estilo Google Maps con los datos reales de DAIM S.A.S. */}
-            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white p-2.5 sm:p-4 rounded-xl sm:rounded-2xl shadow-industrial-lg border border-slate-200/90 max-w-[240px] sm:max-w-xs z-10">
+            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white p-2.5 sm:p-4 rounded-xl sm:rounded-2xl shadow-industrial-lg border border-slate-200/90 max-w-[250px] sm:max-w-xs z-10">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <h5 className="font-black text-xs sm:text-sm text-azul-marino leading-snug">
                     DAIM S.A.S.
                   </h5>
                   <p className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 leading-tight">
-                    Sede: Quito – Ecuador
+                    Sede: La Morita, Tumbaco, Quito
                   </p>
                   <div className="flex items-center space-x-1 mt-1 text-[11px] text-amber-500 font-bold">
                     <span>5.0</span>
@@ -360,7 +373,7 @@ export default function ContactSection() {
                     <span className="text-azul-daim font-bold text-[10px] ml-1">Ingeniería & Energía</span>
                   </div>
                   <a 
-                    href="https://maps.google.com/?q=Quito,+Ecuador" 
+                    href="https://maps.google.com/?q=La+Morita,+Tumbaco,+Quito,+Ecuador" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-block text-[10px] sm:text-[11px] text-azul-daim font-bold hover:underline mt-1"
@@ -371,7 +384,7 @@ export default function ContactSection() {
 
                 {/* Botón de Cómo Llegar / Ruta */}
                 <a
-                  href="https://maps.google.com/maps/dir//Quito,+Ecuador"
+                  href="https://maps.google.com/maps/dir//La+Morita,+Tumbaco,+Quito,+Ecuador"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center justify-center text-azul-daim hover:text-azul-daim-hover flex-shrink-0 group p-1"

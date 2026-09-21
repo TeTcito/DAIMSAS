@@ -1,67 +1,6 @@
-import React, { useState } from 'react';
-import { ChevronDown, ArrowRight } from 'lucide-react';
-
-const heroCards = [
-  {
-    id: 'power',
-    eyebrow: 'ENERGY & POWER',
-    eyebrowColor: 'text-amarillo-seguridad',
-    title: 'Generación & Soluciones de Potencia',
-    desc: 'Turbinas, generadores, BESS, generación modular y soluciones energéticas integradas.',
-    btnText: 'VER SOLUCIONES',
-    btnClass: 'bg-amarillo-seguridad hover:bg-amber-400 text-azul-marino',
-    btnHref: '#servicios',
-    image: '/assets/hero-card-power.webp',
-    alt: 'Generación y Soluciones de Potencia DAIM',
-    bgClass: 'bg-azul-daim',
-  },
-  {
-    id: 'epc',
-    eyebrow: 'ENGINEERING & EPC',
-    eyebrowColor: 'text-celeste-energia',
-    title: 'Ingeniería & Ejecución EPC',
-    desc: 'Ingeniería conceptual, básica y de detalle, procura, construcción y puesta en marcha.',
-    btnText: 'CAPACIDAD EPC',
-    btnClass: 'bg-white hover:bg-slate-100 text-azul-marino',
-    btnHref: '#servicios',
-    image: '/assets/hero-card-epc.webp',
-    alt: 'Ingeniería y Ejecución EPC DAIM',
-    bgClass: 'bg-azul-marino',
-  },
-  {
-    id: 'electrical',
-    eyebrow: 'ELECTRICAL INFRASTRUCTURE',
-    eyebrowColor: 'text-celeste-energia',
-    title: 'Infraestructura Eléctrica',
-    desc: 'Subestaciones, transmisión, distribución, media y baja tensión, protección y control.',
-    btnText: 'VER INFRAESTRUCTURA',
-    btnClass: 'bg-white hover:bg-slate-100 text-azul-marino',
-    btnHref: '#energia',
-    image: '/assets/hero-card-electrical.webp',
-    alt: 'Infraestructura Eléctrica DAIM',
-    bgClass: 'bg-azul-marino-dark',
-  },
-  {
-    id: 'om',
-    eyebrow: 'INDUSTRIAL SERVICES & O&M',
-    eyebrowColor: 'text-amarillo-seguridad',
-    title: 'Operación, Mantenimiento & Servicios Industriales',
-    desc: 'Mantenimiento preventivo, predictivo y correctivo, soporte técnico de planta, modernizaciones y montajes.',
-    btnText: 'VER SERVICIOS O&M',
-    btnClass: 'bg-amarillo-seguridad hover:bg-amber-400 text-azul-marino',
-    btnHref: '#servicios',
-    image: '/assets/hero-card-om.webp',
-    alt: 'Operación, Mantenimiento y Servicios Industriales DAIM',
-    bgClass: 'bg-azul-marino',
-  },
-];
+import React from 'react';
 
 export default function Hero() {
-  const [activeCard, setActiveCard] = useState(null);
-
-  const toggleCard = (index) => {
-    setActiveCard((prev) => (prev === index ? null : index));
-  };
   return (
     <section 
       id="hero" 
@@ -128,88 +67,125 @@ export default function Hero() {
 
       {/* 4 Tarjetas Inferiores DAIM - Superpuestas al 50% en desktop */}
       <div className="relative lg:absolute lg:bottom-0 lg:left-0 lg:right-0 z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full translate-y-4 sm:translate-y-8 lg:translate-y-1/2">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 shadow-2xl rounded-sm border border-white/10">
-          {heroCards.map((card, idx) => {
-            const isActive = activeCard === idx;
-            return (
-              <div
-                key={card.id}
-                onClick={() => toggleCard(idx)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleCard(idx);
-                  }
-                }}
-                className={`text-white p-4 sm:p-5 lg:p-6 relative overflow-hidden flex flex-col justify-end min-h-[200px] sm:min-h-[230px] lg:h-[280px] group border-b border-white/15 last:border-b-0 sm:border-b-0 sm:[&:nth-child(1)]:border-b sm:[&:nth-child(2)]:border-b sm:[&:nth-child(odd)]:border-r lg:border-b-0 lg:border-r lg:last:border-r-0 cursor-pointer select-none transition-all duration-500 ease-out hover:scale-[1.02] hover:z-20 hover:shadow-2xl ${
-                  card.bgClass
-                } ${
-                  isActive ? 'ring-2 ring-inset ring-amarillo-seguridad z-10' : ''
-                }`}
-              >
-                {/* Background Image with Zoom on Hover */}
-                <div className="absolute inset-0 pointer-events-none overflow-hidden">
-                  <img
-                    src={card.image}
-                    alt={card.alt}
-                    className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-110"
-                    loading="eager"
-                    decoding="async"
-                  />
-                  {/* Subtle dynamic overlay on active or hover */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-t transition-opacity duration-500 ${
-                      isActive
-                        ? 'from-black/95 via-black/80 to-black/40 opacity-95'
-                        : 'from-black/90 via-black/50 to-transparent opacity-75 group-hover:opacity-85'
-                    }`}
-                  />
-                </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 shadow-2xl overflow-hidden rounded-sm border border-white/10">
+          
+          {/* Card 1: ENERGY & POWER */}
+          <a
+            href="#servicios"
+            className="bg-azul-daim text-white p-4 sm:p-5 lg:px-4 lg:py-4.5 xl:px-5 xl:py-5 relative overflow-hidden flex flex-col justify-end min-h-[190px] sm:min-h-[220px] lg:min-h-[260px] group border-b sm:border-b-0 border-r border-white/15 cursor-pointer block hover:brightness-105 transition-all"
+          >
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+              <img 
+                src="/assets/hero-card-power.webp" 
+                alt="Generación y Soluciones de Potencia DAIM" 
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
+                loading="eager"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+            </div>
+            
+            <div className="relative z-10">
+              <span className="text-[10px] sm:text-[11px] font-extrabold tracking-widest text-amarillo-seguridad uppercase block mb-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
+                ENERGY & POWER
+              </span>
+              <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2">
+                Generación & Soluciones de Potencia
+              </h3>
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+                Turbinas, generadores, BESS, generación modular y soluciones energéticas integradas.
+              </p>
+            </div>
+          </a>
 
-                {/* Content Block: Everything at bottom, smoothly glides up when active */}
-                <div className="relative z-10 w-full">
-                  {/* Header: Short title (Eyebrow) above Big Title */}
-                  <div className="transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
-                    <span
-                      className={`text-[10px] font-extrabold tracking-widest ${card.eyebrowColor} uppercase block mb-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]`}
-                    >
-                      {card.eyebrow}
-                    </span>
-                    <h3 className="text-base sm:text-lg font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
-                      {card.title}
-                    </h3>
-                  </div>
+          {/* Card 2: ENGINEERING & EPC */}
+          <a
+            href="#servicios"
+            className="bg-azul-marino text-white p-4 sm:p-5 lg:px-4 lg:py-4.5 xl:px-5 xl:py-5 relative overflow-hidden flex flex-col justify-end min-h-[190px] sm:min-h-[220px] lg:min-h-[260px] group border-b sm:border-b-0 border-r border-white/15 cursor-pointer block hover:brightness-105 transition-all"
+          >
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+              <img 
+                src="/assets/hero-card-epc.webp" 
+                alt="Ingeniería y Ejecución EPC DAIM" 
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
+                loading="eager"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+            </div>
 
-                  {/* Expandable message ONLY beneath the title */}
-                  <div
-                    className={`transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
-                      isActive
-                        ? 'max-h-36 opacity-100 mt-2.5 mb-2.5 pointer-events-auto'
-                        : 'max-h-0 opacity-0 mt-0 mb-0 pointer-events-none'
-                    }`}
-                  >
-                    <p className="text-[11px] sm:text-xs text-slate-200 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)]">
-                      {card.desc}
-                    </p>
-                  </div>
+            <div className="relative z-10">
+              <span className="text-[10px] sm:text-[11px] font-extrabold tracking-widest text-amarillo-seguridad uppercase block mb-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
+                ENGINEERING & EPC
+              </span>
+              <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2 whitespace-nowrap">
+                Ingeniería & Ejecución EPC
+              </h3>
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+                Ingeniería conceptual, básica y de detalle, procura, construcción y puesta en marcha.
+              </p>
+            </div>
+          </a>
 
-                  {/* Action button: ALWAYS visible underneath the long title */}
-                  <div className="mt-2.5 sm:mt-3">
-                    <a
-                      href={card.btnHref}
-                      onClick={(e) => e.stopPropagation()}
-                      className={`inline-flex items-center space-x-1.5 px-3 py-1.5 ${card.btnClass} font-black rounded-sm text-[10px] uppercase tracking-wider transition-all shadow-lg active:scale-95`}
-                    >
-                      <span>{card.btnText}</span>
-                      <ArrowRight className="w-3 h-3" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+          {/* Card 3: ELECTRICAL INFRASTRUCTURE */}
+          <a
+            href="#energia"
+            className="bg-azul-marino-dark text-white p-4 sm:p-5 lg:px-4 lg:py-4.5 xl:px-5 xl:py-5 relative overflow-hidden flex flex-col justify-end min-h-[190px] sm:min-h-[220px] lg:min-h-[260px] group border-b sm:border-b-0 border-r border-white/15 cursor-pointer block hover:brightness-105 transition-all"
+          >
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+              <img 
+                src="/assets/hero-card-electrical.webp" 
+                alt="Infraestructura Eléctrica DAIM" 
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
+                loading="eager"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+            </div>
+
+            <div className="relative z-10">
+              <span className="text-[10px] sm:text-[11px] font-extrabold tracking-widest text-amarillo-seguridad uppercase block mb-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
+                ELECTRICAL INFRASTRUCTURE
+              </span>
+              <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2 whitespace-nowrap">
+                Infraestructura Eléctrica
+              </h3>
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+                Subestaciones, transmisión, distribución, media y baja tensión, protección y control.
+              </p>
+            </div>
+          </a>
+
+          {/* Card 4: INDUSTRIAL SERVICES & O&M */}
+          <a
+            href="#servicios"
+            className="bg-azul-marino text-white p-4 sm:p-5 lg:px-4 lg:py-4.5 xl:px-5 xl:py-5 relative overflow-hidden flex flex-col justify-end min-h-[190px] sm:min-h-[220px] lg:min-h-[260px] group cursor-pointer block hover:brightness-105 transition-all"
+          >
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+              <img 
+                src="/assets/hero-card-om.webp" 
+                alt="Operación, Mantenimiento y Servicios Industriales DAIM" 
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
+                loading="eager"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+            </div>
+
+            <div className="relative z-10">
+              <span className="text-[10px] sm:text-[11px] font-extrabold tracking-widest text-amarillo-seguridad uppercase block mb-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]">
+                INDUSTRIAL SERVICES & O&M
+              </span>
+              <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2">
+                <span className="block">Operación, Mantenimiento</span>
+                <span className="block">& Servicios Industriales</span>
+              </h3>
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+                Mantenimiento preventivo, predictivo y correctivo, soporte técnico de planta, modernizaciones y montajes.
+              </p>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>

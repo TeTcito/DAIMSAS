@@ -27,13 +27,13 @@ export default function Contact() {
                   DAIM S.A.S.
                 </span>
                 <span className="text-[8px] sm:text-[9px] text-celeste-energia uppercase tracking-wider font-bold block">
-                  ENERGY · ENGINEERING · INFRASTRUCTURE · O&M
+                  INGENIERÍA · ENERGÍA · INFRAESTRUCTURA
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
-              Empresa líder en soluciones integrales bajo la modalidad llave en mano. Comprometidos con la excelencia técnica, seguridad industrial y el desarrollo sostenible en Ecuador.
+              Integramos ingeniería, suministro, construcción y soporte técnico para proyectos de energía, infraestructura eléctrica e instalaciones industriales en Ecuador y la región.
             </p>
 
             {/* Redes Sociales con Enlaces Seguros */}
@@ -129,23 +129,27 @@ export default function Contact() {
             <ul className="space-y-1.5 sm:space-y-2 text-xs text-slate-300">
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Energía & Generación de Potencia</span>
+                <span>Energía & Utilities</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Infraestructura Eléctrica & Subestaciones</span>
+                <span>Oil, Gas & Petrochemical</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Ingeniería & Procura EPC Llave en Mano</span>
+                <span>Industria & Manufactura</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Servicios Industriales & Operación y Mantenimiento (O&M)</span>
+                <span>Alimentos, Acuacultura & Cadena de Frío</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
+                <span>Infraestructura & Construcción</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-amarillo-seguridad inline-block flex-shrink-0" />
-                <span>Energía Solar Fotovoltaica, Híbrida & BESS</span>
+                <span>Commercial & Industrial Energy</span>
               </li>
             </ul>
           </div>
@@ -155,10 +159,10 @@ export default function Contact() {
         {/* Bottom Legal & Copyright Bar */}
         <div className="mt-8 pt-6 sm:mt-12 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[10px] sm:text-[11px] text-slate-400 text-center sm:text-left">
           <p>
-            © {currentYear} DAIM S.A.S. (ENERGY · ENGINEERING · INFRASTRUCTURE · O&M). Todos los derechos reservados.
+            © {currentYear} DAIM S.A.S. (INGENIERÍA · ENERGÍA · INFRAESTRUCTURA). Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-3 sm:space-x-4">
-            <span>Quito – Ecuador</span>
+            <span>Quito · Caracas · Madrid</span>
             <span>·</span>
             <span>Seguridad & Calidad Certificada</span>
           </div>

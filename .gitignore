@@ -1,4 +1,4 @@
-﻿# Dependencies
+# Dependencies
 node_modules/
 dist/
 dist-ssr/
@@ -30,3 +30,5 @@ prompt.txt
 Brochure Informativo DAIM.pdf
 test_daim_engineer_card.png
 brochure_text.txt
+~$*
+*.docx

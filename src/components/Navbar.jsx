@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <div className="flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm">
               <MapPin className="w-3.5 h-3.5 text-amarillo-seguridad" />
-              <span className="text-slate-200 text-[11px]">Quito – Ecuador</span>
+              <span className="text-slate-200 text-[11px]">Quito · Caracas · Madrid</span>
             </div>
             
             <a 
@@ -211,7 +211,7 @@ export default function Navbar() {
               <div className="text-xs text-slate-300 space-y-1.5">
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-3.5 h-3.5 text-amarillo-seguridad" />
-                  <span>Quito – Ecuador</span>
+                  <span>Quito · Caracas · Madrid</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-3.5 h-3.5 text-slate-400" />
