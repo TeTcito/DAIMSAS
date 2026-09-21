@@ -20,8 +20,15 @@ export default function Navbar() {
     { name: 'Contacto', href: '#contacto' },
   ];
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e, href) => {
     setMobileMenuOpen(false);
+    if (href === '#inicio') {
+      e?.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (window.location.hash) {
+        history.pushState(null, '', window.location.pathname + window.location.search);
+      }
+    }
   };
 
   return (
@@ -33,12 +40,22 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <div className="flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm">
               <MapPin className="w-3.5 h-3.5 text-amarillo-seguridad" />
-              <span className="text-slate-200 text-[11px]">Guayaquil - Esmeraldas, Ecuador</span>
+              <span className="text-slate-200 text-[11px]">Quito – Ecuador</span>
             </div>
             
             <a 
-              href="mailto:jesusmendez.dai@gmail.com" 
+              href="mailto:gerencia@daimenergy.com" 
               className="flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm hover:border-celeste-energia transition-colors"
+              title="Correo Principal"
+            >
+              <Mail className="w-3.5 h-3.5 text-slate-300" />
+              <span className="text-slate-200 text-[11px]">gerencia@daimenergy.com</span>
+            </a>
+
+            <a 
+              href="mailto:jesusmendez.dai@gmail.com" 
+              className="hidden xl:flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm hover:border-celeste-energia transition-colors"
+              title="Correo Alternativo"
             >
               <Mail className="w-3.5 h-3.5 text-slate-300" />
               <span className="text-slate-200 text-[11px]">jesusmendez.dai@gmail.com</span>
@@ -104,20 +121,23 @@ export default function Navbar() {
           {/* Logo transparente */}
           <a 
             href="#inicio" 
+            onClick={(e) => handleLinkClick(e, '#inicio')}
             className="flex items-center space-x-3 group focus:outline-none"
             aria-label="DAIM S.A.S. Inicio"
           >
             <img 
-              src="/assets/logo-daim-white.png" 
+              src="/assets/logo-daim-white.webp" 
               alt="DAIM S.A.S." 
-              className="h-8 sm:h-9 md:h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain transition-transform group-hover:scale-105" 
+              loading="eager"
+              decoding="async"
             />
-            <div className="hidden sm:block leading-tight text-left pl-1 border-l border-white/20">
+            <div className="hidden sm:block leading-tight text-left pl-2 border-l border-white/20">
               <span className="block font-black text-white text-sm md:text-base tracking-wide group-hover:text-celeste-energia transition-colors">
                 DAIM S.A.S.
               </span>
-              <span className="block text-[9px] md:text-[10px] text-celeste-energia uppercase tracking-wider font-semibold">
-                Ingeniería & Mantenimiento
+              <span className="block text-[8px] sm:text-[9px] md:text-[9.5px] text-celeste-energia uppercase tracking-wider font-bold">
+                ENERGY · ENGINEERING · INFRASTRUCTURE · O&M
               </span>
             </div>
           </a>
@@ -128,6 +148,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleLinkClick(e, link.href)}
                 className="px-2.5 py-1.5 text-sm font-semibold text-slate-200 hover:text-celeste-energia transition-colors"
               >
                 {link.name}
@@ -178,7 +199,7 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={handleLinkClick}
+                  onClick={(e) => handleLinkClick(e, link.href)}
                   className="px-3 py-3 text-sm font-semibold text-white hover:bg-white/5 hover:text-celeste-energia border-l-2 border-transparent hover:border-celeste-energia transition-all"
                 >
                   {link.name}
@@ -190,7 +211,11 @@ export default function Navbar() {
               <div className="text-xs text-slate-300 space-y-1.5">
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-3.5 h-3.5 text-amarillo-seguridad" />
-                  <span>Guayaquil - Esmeraldas, Ecuador</span>
+                  <span>Quito – Ecuador</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-3.5 h-3.5 text-slate-400" />
+                  <span>gerencia@daimenergy.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-3.5 h-3.5 text-slate-400" />

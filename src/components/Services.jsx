@@ -14,58 +14,58 @@ import { WhatsAppIcon } from './SocialIcons';
 export default function Services() {
   const servicesList = [
     {
-      id: 'electricidad',
-      title: 'Instalaciones Eléctricas',
-      subtitle: 'Media & Alta Tensión',
-      desc: 'Montaje, conexión y puesta en marcha de redes de media y alta tensión, transformadores de potencia, acometidas industriales y bancos de condensadores.',
-      image: '/assets/service-card-electrical.jpg',
+      id: 'energy-power',
+      eyebrow: 'ENERGY & POWER',
+      title: 'Generación & Soluciones de Potencia',
+      desc: 'Generación eléctrica, sistemas de potencia, BESS, respaldo energético y soluciones integradas para proyectos industriales y energéticos.',
+      image: '/assets/service-power-generation.webp',
       icon: Zap,
-      badge: 'Media & Alta Tensión'
+      badge: 'Sistemas de Potencia & BESS'
     },
     {
-      id: 'automatizacion',
-      title: 'Tableros & Automatización',
-      subtitle: 'Control Industrial & PLC',
-      desc: 'Diseño, ensamble estructurado, cableado y modernización de tableros de control y automatización con integración de PLC, HMI y variadores de frecuencia.',
-      image: '/assets/service-card-wiring.jpg',
+      id: 'electrical-infra',
+      eyebrow: 'ELECTRICAL INFRASTRUCTURE',
+      title: 'Infraestructura Eléctrica',
+      desc: 'Subestaciones, transmisión, distribución, media y baja tensión, protección, control y sistemas auxiliares.',
+      image: '/assets/service-infraestructura-electrica.webp',
       icon: Sliders,
-      badge: 'Automatización & Control'
+      badge: 'Subestaciones & Transmisión'
     },
     {
-      id: 'energia-solar',
-      title: 'Energía Solar & Iluminación',
-      subtitle: 'Sistemas Fotovoltaicos & LED',
-      desc: 'Soluciones fotovoltaicas industriales llave en mano, sistemas solares adaptados para autoconsumo continuo y luminarias viales autónomas.',
-      image: '/assets/service-card-lighting.jpg',
-      icon: Lightbulb,
-      badge: 'Energía Renovable'
-    },
-    {
-      id: 'metalmecanica',
-      title: 'Metalmecánica & Piping',
-      subtitle: 'Tuberías de Proceso & Acero',
-      desc: 'Fabricación y montaje de tuberías de proceso bajo códigos ASME/ASTM, tolvas, esclusas, transportadores mecánicos y estructuras de acero.',
-      image: '/assets/service-card-panel.jpg',
+      id: 'engineering-epc',
+      eyebrow: 'ENGINEERING & EPC',
+      title: 'Ingeniería & Ejecución EPC',
+      desc: 'Ingeniería conceptual, básica y de detalle, procura, construcción, gestión de proyectos, integración y puesta en marcha.',
+      image: '/assets/service-epc-engineering.webp',
       icon: Layers,
-      badge: 'Normativas ASME / ASTM'
+      badge: 'Ingeniería & Procura EPC'
     },
     {
-      id: 'mantenimiento',
-      title: 'Mantenimiento Industrial',
-      subtitle: 'Predictivo, Preventivo & Correctivo',
-      desc: 'Gestión integral de mantenimiento industrial con técnicas predictivas avanzadas de vibraciones, alineación láser y overhaul de maquinaria crítica.',
-      image: '/assets/service-card-maintenance.jpg',
+      id: 'industrial-services-om',
+      eyebrow: 'INDUSTRIAL SERVICES & O&M',
+      title: 'Operación, Mantenimiento & Servicios Industriales',
+      desc: 'Mantenimiento preventivo, predictivo y correctivo, montajes, modernizaciones, soporte técnico y servicios especializados.',
+      image: '/assets/service-om.webp',
       icon: Wrench,
-      badge: 'Monitoreo Predictivo'
+      badge: 'Gestión Integral O&M'
     },
     {
-      id: 'civil-emergencias',
-      title: 'Obras Civiles & Paradas',
-      subtitle: 'Infraestructura & Soporte 24/7',
-      desc: 'Obras civiles pesadas, fundidos de hormigón armado, pisos industriales de alta resistencia, guardavías y cuadrillas de respuesta rápida en paradas de planta.',
-      image: '/assets/service-card-emergency.jpg',
+      id: 'power-gen-equipment',
+      eyebrow: 'POWER GENERATION EQUIPMENT',
+      title: 'Turbinas & Equipos de Generación',
+      desc: 'Búsqueda, estudio, comparación y selección de turbinas y generadores, coordinación con fabricantes, procura, logística, transporte y almacenamiento temporal en obra.',
+      image: '/assets/service-turbine-power.webp',
       icon: Truck,
-      badge: 'Respuesta Rápida 24/7'
+      badge: 'Turbinas & Procura Crítica'
+    },
+    {
+      id: 'renewable-energy',
+      eyebrow: 'RENEWABLE ENERGY',
+      title: 'Energías Renovables',
+      desc: 'Soluciones solares, híbridas y de almacenamiento energético para proyectos comerciales, industriales y de generación distribuida.',
+      image: '/assets/service-renewable-bess.webp',
+      icon: Lightbulb,
+      badge: 'Solar & Almacenamiento'
     },
   ];
 
@@ -77,9 +77,13 @@ export default function Services() {
       {/* Background Image: Complejo industrial y subestación al atardecer */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
-          src="/assets/services-industrial-bg.jpg" 
+          src="/assets/services-industrial-bg.webp" 
           alt="Infraestructura industrial y eléctrica DAIM S.A.S." 
           className="w-full h-full object-cover object-center"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
         />
         {/* Degradado azul marino corporativo para máxima elegancia y legibilidad */}
         <div className="absolute inset-0 bg-gradient-to-b from-azul-marino-dark/95 via-azul-marino/90 to-azul-marino-dark/95" />
@@ -109,7 +113,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {servicesList.map((srv) => {
             const Icon = srv.icon;
-            const whatsappUrl = `https://wa.me/593983838317?text=${encodeURIComponent(`Hola DAIM S.A.S., me interesa cotizar y consultar detalles sobre el servicio de ${srv.title}.`)}`;
+            const whatsappUrl = `https://wa.me/593983838317?text=${encodeURIComponent(`Hola DAIM S.A.S., me interesa solicitar asesoría técnica sobre ${srv.title} (${srv.eyebrow}).`)}`;
 
             return (
               <div
@@ -117,11 +121,13 @@ export default function Services() {
                 className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2 flex flex-col justify-between group border border-slate-100"
               >
                 {/* Contenedor Superior: Fotografía del Servicio */}
-                <div className="relative h-36 sm:h-48 md:h-60 w-full overflow-hidden bg-slate-100">
+                <div className="relative h-36 sm:h-48 md:h-56 w-full overflow-hidden bg-slate-100">
                   <img 
                     src={srv.image} 
                     alt={srv.title} 
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" 
+                    loading="lazy"
+                    decoding="async"
                   />
                   {/* Sutil viñeta inferior para contraste */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 pointer-events-none" />
@@ -132,21 +138,26 @@ export default function Services() {
                   <Icon className="w-5 h-5 sm:w-7 sm:h-7 text-azul-daim group-hover:text-white transition-colors" />
                 </div>
 
-                {/* Contenedor Inferior: Textos y Cuadro de Cotización */}
+                {/* Contenedor Inferior: Textos y Cuadro de Asesoría */}
                 <div className="p-4 sm:p-6 pt-2 sm:pt-3 flex-grow flex flex-col justify-between">
                   <div>
-                    {/* Título del Servicio */}
-                    <h3 className="text-lg sm:text-xl font-black text-azul-marino tracking-tight mb-1 sm:mb-2 group-hover:text-azul-daim transition-colors">
+                    {/* Título Pequeño (Categoría / Eyebrow) */}
+                    <span className="text-[10px] sm:text-[11px] font-extrabold text-azul-daim uppercase tracking-wider block mb-1">
+                      {srv.eyebrow}
+                    </span>
+
+                    {/* Título Grande del Servicio */}
+                    <h3 className="text-base sm:text-lg lg:text-xl font-black text-azul-marino tracking-tight mb-2 group-hover:text-azul-daim transition-colors leading-snug">
                       {srv.title}
                     </h3>
 
-                    {/* Descripción concisa adaptada en móviles con line-clamp */}
-                    <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed line-clamp-2 sm:line-clamp-none">
+                    {/* Descripción concisa adaptada en móviles */}
+                    <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed line-clamp-3 sm:line-clamp-none">
                       {srv.desc}
                     </p>
                   </div>
 
-                  {/* Cuadro de Cotización */}
+                  {/* Cuadro de Asesoría */}
                   <div className="mt-3 sm:mt-5 pt-3 sm:pt-4 border-t border-slate-100 flex flex-col gap-2 sm:gap-2.5">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] sm:text-[11px] font-extrabold text-azul-daim bg-azul-daim/10 px-2 sm:px-2.5 py-0.5 rounded uppercase tracking-wider">
@@ -164,7 +175,7 @@ export default function Services() {
                       className="w-full py-2 sm:py-2.5 px-3 sm:px-4 rounded-xl bg-azul-daim hover:bg-azul-daim-hover text-white font-extrabold text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-center space-x-2 shadow-md hover:shadow-lg transform active:scale-95 group/btn"
                     >
                       <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current text-white" />
-                      <span>Solicitar Cotización</span>
+                      <span>Solicitar Asesoría</span>
                       <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transform group-hover/btn:translate-x-1 transition-transform" />
                     </a>
                   </div>

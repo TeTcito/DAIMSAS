@@ -222,9 +222,10 @@ export default function EnergyAndProjects() {
               <div className="group relative overflow-hidden border border-white/10 bg-black/40">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img 
-                    src="/assets/project-solar-workers.jpg" 
+                    src="/assets/project-solar-workers.webp" 
                     alt="Instalación de paneles solares fotovoltaicos por equipo DAIM" 
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -237,9 +238,10 @@ export default function EnergyAndProjects() {
               <div className="group relative overflow-hidden border border-white/10 bg-black/40">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img 
-                    src="/assets/project-substation.jpg" 
+                    src="/assets/project-substation.webp" 
                     alt="Subestación de potencia y transformadores eléctricos DAIM" 
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -252,9 +254,10 @@ export default function EnergyAndProjects() {
               <div className="group relative overflow-hidden border border-white/10 bg-black/40">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img 
-                    src="/assets/project-piping.jpg" 
+                    src="/assets/project-piping.webp" 
                     alt="Tuberías de proceso y válvulas industriales montadas por DAIM" 
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>

@@ -13,19 +13,21 @@ export default function Contact() {
           {/* Logo & Corporate Identity */}
           <div className="md:col-span-5 space-y-3 sm:space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="bg-white px-2 py-1 inline-block">
+              <div className="bg-white px-2.5 py-1.5 inline-block rounded-sm">
                 <img 
-                  src="/assets/logo-daim.png" 
+                  src="/assets/logo-daim.webp" 
                   alt="DAIM S.A.S." 
-                  className="h-8 sm:h-9 w-auto object-contain" 
+                  className="h-9 sm:h-11 md:h-12 w-auto object-contain" 
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div>
                 <span className="font-black text-base sm:text-lg text-white block leading-tight">
                   DAIM S.A.S.
                 </span>
-                <span className="text-[9px] sm:text-[10px] text-celeste-energia uppercase tracking-wider font-semibold block">
-                  Desarrollo Avanzado de Ingeniería y Mantenimiento
+                <span className="text-[8px] sm:text-[9px] text-celeste-energia uppercase tracking-wider font-bold block">
+                  ENERGY · ENGINEERING · INFRASTRUCTURE · O&M
                 </span>
               </div>
             </div>
@@ -90,7 +92,19 @@ export default function Contact() {
             </h4>
             <ul className="space-y-1.5 sm:space-y-2 text-xs text-slate-300">
               <li>
-                <a href="#inicio" className="hover:text-celeste-energia transition-colors">Inicio</a>
+                <a 
+                  href="#inicio" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    if (window.location.hash) {
+                      history.pushState(null, '', window.location.pathname + window.location.search);
+                    }
+                  }}
+                  className="hover:text-celeste-energia transition-colors"
+                >
+                  Inicio
+                </a>
               </li>
               <li>
                 <a href="#nosotros" className="hover:text-celeste-energia transition-colors">Nosotros</a>
@@ -115,23 +129,23 @@ export default function Contact() {
             <ul className="space-y-1.5 sm:space-y-2 text-xs text-slate-300">
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Sector Eléctrico & Subestaciones 69/13.8 kV</span>
+                <span>Energía & Generación de Potencia</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Sector Petroquímico & Tuberías de Proceso</span>
+                <span>Infraestructura Eléctrica & Subestaciones</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Sector Alimenticio, Camaroneras & Frío</span>
+                <span>Ingeniería & Procura EPC Llave en Mano</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
-                <span>Construcción Civil, Obras Industriales & Viales</span>
+                <span>Servicios Industriales & Operación y Mantenimiento (O&M)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-amarillo-seguridad inline-block flex-shrink-0" />
-                <span>Energía Solar Fotovoltaica & Alumbrado Vial</span>
+                <span>Energía Solar Fotovoltaica, Híbrida & BESS</span>
               </li>
             </ul>
           </div>
@@ -141,10 +155,10 @@ export default function Contact() {
         {/* Bottom Legal & Copyright Bar */}
         <div className="mt-8 pt-6 sm:mt-12 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[10px] sm:text-[11px] text-slate-400 text-center sm:text-left">
           <p>
-            © {currentYear} DAIM S.A.S. (Desarrollo Avanzado de Ingeniería y Mantenimiento). Todos los derechos reservados.
+            © {currentYear} DAIM S.A.S. (ENERGY · ENGINEERING · INFRASTRUCTURE · O&M). Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-3 sm:space-x-4">
-            <span>Guayaquil - Esmeraldas, Ecuador</span>
+            <span>Quito – Ecuador</span>
             <span>·</span>
             <span>Seguridad & Calidad Certificada</span>
           </div>

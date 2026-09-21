@@ -145,9 +145,11 @@ export default function ContactSection() {
             <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-azul-marino via-azul-marino-card to-azul-marino-dark p-5 sm:p-9 text-white flex flex-col justify-between h-full shadow-industrial-lg border border-azul-daim/30 min-h-[280px] sm:min-h-[360px]">
               {/* Fotografía de fondo translúcida con overlay */}
               <img 
-                src="/assets/contact-industrial.jpg" 
+                src="/assets/contact-industrial.webp" 
                 alt="Instalaciones industriales y equipo técnico DAIM" 
                 className="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-overlay pointer-events-none"
+                loading="lazy"
+                decoding="async"
               />
               
               <div className="relative z-10 mb-4 sm:mb-5">
@@ -274,19 +276,24 @@ export default function ContactSection() {
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-azul-daim/10 border border-azul-daim/30 flex items-center justify-center flex-shrink-0 text-azul-daim group-hover:scale-105 transition-transform">
                   <AtSign className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <h4 className="text-xs sm:text-base lg:text-lg font-black tracking-tight text-azul-marino truncate whitespace-nowrap" title="jesusmendez.dai@gmail.com">
-                  jesusmendez.dai@gmail.com
-                </h4>
+                <div className="overflow-hidden">
+                  <h4 className="text-xs sm:text-base font-black tracking-tight text-azul-marino truncate" title="gerencia@daimenergy.com">
+                    gerencia@daimenergy.com
+                  </h4>
+                  <p className="text-[11px] sm:text-xs text-slate-500 font-semibold truncate" title="jesusmendez.dai@gmail.com">
+                    jesusmendez.dai@gmail.com
+                  </p>
+                </div>
               </div>
               <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
-                Recepción formal de pliegos de contratación, términos de referencia (TDR), planos y especificaciones de proyectos llave en mano.
+                Recepción formal de pliegos de contratación, términos de referencia (TDR), requerimientos de procura y especificaciones de proyectos.
               </p>
             </div>
 
             <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-azul-daim/15 flex items-center justify-between text-xs text-azul-marino">
-              <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Correo Institucional:</span>
+              <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Correos Institucionales:</span>
               <a 
-                href="mailto:jesusmendez.dai@gmail.com" 
+                href="mailto:gerencia@daimenergy.com" 
                 className="font-extrabold text-azul-daim hover:text-azul-marino uppercase tracking-wider text-[10px] sm:text-[11px] transition-colors inline-flex items-center space-x-1"
               >
                 <span>Redactar</span>
@@ -303,11 +310,11 @@ export default function ContactSection() {
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <h4 className="text-sm sm:text-lg lg:text-xl font-black tracking-tight text-azul-marino truncate whitespace-nowrap">
-                  Guayaquil - Esmeraldas
+                  Quito – Ecuador
                 </h4>
               </div>
               <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
-                Bases de operaciones estratégicas en la Costa ecuatoriana con despliegue técnico y cuadrillas activas en todo el territorio de Ecuador.
+                Sede central de operaciones en Quito con capacidad de despliegue técnico, supervisión y cuadrillas activas a nivel nacional.
               </p>
             </div>
 
@@ -324,7 +331,7 @@ export default function ContactSection() {
         {/* FILA 3: MAPA DE GOOGLE EMBEBIDO CON BORDES REDONDEADOS Y ESTILO DAIM */}
         <div className="mt-6 sm:mt-8">
           <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-slate-200 shadow-industrial h-56 sm:h-80 lg:h-96 w-full bg-slate-100">
-            {/* Iframe interactivo de Google Maps enfocado en Guayaquil, Ecuador */}
+            {/* Iframe interactivo de Google Maps enfocado en Quito, Ecuador */}
             <iframe
               title="Ubicación DAIM S.A.S. en Google Maps"
               width="100%"
@@ -333,7 +340,7 @@ export default function ContactSection() {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?q=Guayaquil,%20Ecuador&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Quito,%20Ecuador&t=&z=12&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full filter contrast-[1.02]"
             />
 
@@ -345,15 +352,15 @@ export default function ContactSection() {
                     DAIM S.A.S.
                   </h5>
                   <p className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 leading-tight">
-                    Sede Operativa: Guayaquil - Esmeraldas, Ecuador
+                    Sede: Quito – Ecuador
                   </p>
                   <div className="flex items-center space-x-1 mt-1 text-[11px] text-amber-500 font-bold">
                     <span>5.0</span>
                     <span>★★★★★</span>
-                    <span className="text-azul-daim font-bold text-[10px] ml-1">Ingeniería & Obras</span>
+                    <span className="text-azul-daim font-bold text-[10px] ml-1">Ingeniería & Energía</span>
                   </div>
                   <a 
-                    href="https://maps.google.com/?q=Guayaquil,+Ecuador" 
+                    href="https://maps.google.com/?q=Quito,+Ecuador" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-block text-[10px] sm:text-[11px] text-azul-daim font-bold hover:underline mt-1"
@@ -364,14 +371,14 @@ export default function ContactSection() {
 
                 {/* Botón de Cómo Llegar / Ruta */}
                 <a
-                  href="https://maps.google.com/maps/dir//Guayaquil,+Ecuador"
+                  href="https://maps.google.com/maps/dir//Quito,+Ecuador"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col items-center justify-center text-azul-daim hover:text-azul-daim-hover flex-shrink-0 group p-1"
                 >
                   <div className="w-8 h-8 rounded-full bg-azul-daim/10 group-hover:bg-azul-daim group-hover:text-white flex items-center justify-center transition-colors">
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                      <path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zm-10.71 7.3L4.41 12 11 5.41V10h4v5h-4v3.59z"/>
+                      <path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zm-10.71 7.3L4.41 12 11 5.41V10h4v5h-4v3.59z"/>
                     </svg>
                   </div>
                   <span className="text-[9px] font-bold text-azul-daim mt-0.5">Ruta</span>

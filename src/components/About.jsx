@@ -2,62 +2,62 @@ import React from 'react';
 import { 
   Zap, 
   Flame, 
-  Wheat, 
   Building2, 
   Quote, 
   CheckCircle,
   HardHat,
   ShieldCheck,
   Ruler,
-  Award
+  Award,
+  Sliders
 } from 'lucide-react';
 
 export default function About() {
   const sectors = [
     { 
-      name: 'Eléctrico', 
+      name: 'Energía & Generación', 
       icon: Zap, 
-      desc: 'Subestaciones, líneas de transmisión, tableros y sistemas solares adaptados.',
+      desc: 'Generación térmica, renovables, BESS, sistemas de respaldo y soluciones de potencia para proyectos energéticos e industriales.',
+      badge: 'Generación & BESS'
+    },
+    { 
+      name: 'Infraestructura Eléctrica', 
+      icon: Sliders, 
+      desc: 'Subestaciones, transmisión, distribución, media y baja tensión, protección, control y sistemas auxiliares.',
       badge: 'Media & Alta Tensión'
     },
     { 
-      name: 'Petroquímico', 
+      name: 'Industria & Procesos', 
       icon: Flame, 
-      desc: 'Tuberías de proceso, montajes industriales y mantenimiento especializado.',
-      badge: 'Normativa Industrial'
+      desc: 'Soluciones eléctricas, mecánicas, instrumentación, automatización, piping, montajes y soporte técnico para instalaciones industriales.',
+      badge: 'Montajes & Procesos'
     },
     { 
-      name: 'Alimenticio', 
-      icon: Wheat, 
-      desc: 'Sistemas de refrigeración, galpones y líneas de procesamiento higiénico.',
-      badge: 'Agro & Frío'
-    },
-    { 
-      name: 'Construcción', 
+      name: 'Infraestructura & Construcción', 
       icon: Building2, 
-      desc: 'Obras civiles, fundidos, losas de hormigón, estructuras de acero y acabados.',
-      badge: 'Infraestructura Civil'
+      desc: 'Obras civiles, estructuras, instalaciones electromecánicas y ejecución de infraestructura asociada a proyectos energéticos e industriales.',
+      badge: 'Electromecánica & Civil'
     },
   ];
 
   const thumbnails = [
     {
-      src: '/assets/sector-solar.jpg',
+      src: '/assets/sector-solar.webp',
       title: 'Energía Solar y Renovables',
       caption: 'Sistemas fotovoltaicos industriales y comerciales'
     },
     {
-      src: '/assets/sector-refinery.jpg',
+      src: '/assets/sector-refinery.webp',
       title: 'Complejos Industriales',
       caption: 'Plantas petroquímicas e ingeniería de procesos'
     },
     {
-      src: '/assets/sector-lighting.jpg',
+      src: '/assets/sector-lighting.webp',
       title: 'Iluminación Vial Solar',
       caption: 'Luminarias autónomas en corredores estratégicos'
     },
     {
-      src: '/assets/sector-transmission.jpg',
+      src: '/assets/sector-transmission.webp',
       title: 'Torres y Redes Eléctricas',
       caption: 'Líneas de transmisión y distribución de potencia'
     },
@@ -80,9 +80,11 @@ export default function About() {
           <div className="lg:col-span-5 flex">
             <div className="relative w-full h-[230px] sm:h-[340px] lg:h-full lg:min-h-[440px] overflow-hidden rounded-2xl shadow-xl border border-slate-100">
               <img 
-                src="/assets/about-solid-principles.jpg" 
+                src="/assets/about-solid-principles.webp" 
                 alt="Equipo técnico y de supervisión DAIM S.A.S. planificando planos de obra" 
                 className="w-full h-full object-cover object-center"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-azul-marino-dark/30 via-transparent to-transparent opacity-60 pointer-events-none" />
             </div>
@@ -98,15 +100,15 @@ export default function About() {
                 <span>Sobre DAIM S.A.S.</span>
               </div>
 
-              {/* Titular Imponente: "Construidos Sobre Principios Sólidos" */}
+              {/* Titular Imponente: "Experiencia, Ingeniería y Compromiso" */}
               <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight leading-[1.15] mb-3 sm:mb-5">
-                Construidos Sobre<br />
-                Principios Sólidos
+                Experiencia, Ingeniería<br />
+                y Compromiso
               </h2>
 
               {/* Párrafo de Apertura Corporativa */}
               <p className="text-slate-600 text-xs sm:text-base leading-relaxed mb-5 sm:mb-8 max-w-2xl font-normal">
-                Operamos con integridad, precisión técnica y responsabilidad absoluta, garantizando que cada solución llave en mano cumpla con las más altas expectativas de rendimiento y seguridad.
+                DAIM integra experiencia profesional, capacidad técnica y una gestión orientada a la seguridad, la calidad y el cumplimiento. Nuestro equipo ha participado en proyectos de ingeniería, energía, infraestructura eléctrica, construcción y mantenimiento en distintos entornos industriales.
               </p>
 
               {/* Sub-Grid: 3 Principios (Izq) y 2 Cajas de Métricas (Der) */}
@@ -124,8 +126,8 @@ export default function About() {
                       <h4 className="font-black text-azul-marino text-sm sm:text-base mb-0.5">
                         Integridad
                       </h4>
-                      <p className="text-xs text-slate-600 leading-relaxed font-normal line-clamp-2 sm:line-clamp-none">
-                        Operamos con total transparencia y responsabilidad, honrando cada compromiso contractual con los más altos estándares éticos.
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                        Actuamos con transparencia, responsabilidad y compromiso en cada proyecto y relación comercial.
                       </p>
                     </div>
                   </div>
@@ -139,8 +141,8 @@ export default function About() {
                       <h4 className="font-black text-azul-marino text-sm sm:text-base mb-0.5">
                         Seguridad
                       </h4>
-                      <p className="text-xs text-slate-600 leading-relaxed font-normal line-clamp-2 sm:line-clamp-none">
-                        Protocolos rigurosos y 100% EPP integrados transversalmente en planificación, procura y faenas en campo.
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                        Aplicamos criterios de seguridad, prevención y buenas prácticas durante la planificación y ejecución de nuestras actividades.
                       </p>
                     </div>
                   </div>
@@ -154,8 +156,8 @@ export default function About() {
                       <h4 className="font-black text-azul-marino text-sm sm:text-base mb-0.5">
                         Precisión en Ingeniería
                       </h4>
-                      <p className="text-xs text-slate-600 leading-relaxed font-normal line-clamp-2 sm:line-clamp-none">
-                        Entregamos soluciones estructuralmente robustas y montajes electromecánicos confiables mediante ejecución milimétrica.
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                        Desarrollamos soluciones técnicas basadas en criterios de ingeniería, normativa aplicable y control de calidad.
                       </p>
                     </div>
                   </div>
@@ -173,26 +175,39 @@ export default function About() {
 
                 </div>
 
-                {/* Sub-columna Derecha: 2 Cajas de Datos (En móvil en 2 columnas para no alargar verticalmente) */}
-                <div className="sm:col-span-5 grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-4">
+                {/* Sub-columna Derecha: Experiencia Técnica y Normas */}
+                <div className="sm:col-span-5 flex flex-col gap-3 sm:gap-4">
                   
-                  {/* Caja 1 Azul DAIM: 150+ Proyectos Completados */}
-                  <div className="bg-azul-daim text-white p-4 sm:p-7 rounded-xl sm:rounded-2xl shadow-industrial flex flex-col justify-center min-h-[100px] sm:min-h-[140px]">
-                    <div className="text-3xl sm:text-5xl font-black text-amarillo-seguridad tracking-tight leading-none mb-1 sm:mb-2">
-                      150+
+                  {/* Caja 1 Azul DAIM: Experiencia Profesional & Técnica */}
+                  <div className="bg-azul-daim text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-industrial flex flex-col justify-between">
+                    <div>
+                      <div className="text-[9px] sm:text-[10px] font-extrabold uppercase tracking-widest text-amarillo-seguridad mb-1">
+                        EXPERIENCIA PROFESIONAL
+                      </div>
+                      <h5 className="text-base sm:text-xl font-black text-white tracking-tight leading-snug">
+                        EXPERIENCIA TÉCNICA
+                      </h5>
+                      <p className="text-xs font-bold text-celeste-energia mt-0.5 mb-2">
+                        Proyectos desarrollados por nuestro equipo
+                      </p>
+                      <p className="text-[11px] text-slate-100 leading-relaxed font-normal">
+                        Experiencia acumulada en ingeniería, energía, infraestructura eléctrica, construcción y mantenimiento industrial.
+                      </p>
                     </div>
-                    <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-white/95 leading-tight">
-                      Proyectos<br />Completados
+                    <div className="mt-3 pt-2.5 border-t border-white/20 text-[9px] sm:text-[10px] font-extrabold text-slate-200 uppercase tracking-wider">
+                      Ingeniería · Energía · EPC · O&M
                     </div>
                   </div>
 
                   {/* Caja 2 Azul Marino Profundo: Certificaciones & Normas */}
-                  <div className="bg-azul-marino text-white p-4 sm:p-7 rounded-xl sm:rounded-2xl shadow-industrial border border-white/10 flex flex-col justify-center min-h-[100px] sm:min-h-[160px]">
-                    <Award className="w-5 h-5 sm:w-7 sm:h-7 text-celeste-energia mb-1.5 sm:mb-3 flex-shrink-0" />
-                    <h5 className="font-black text-white text-xs sm:text-base leading-tight mb-1">
-                      Certificaciones & Normas
-                    </h5>
-                    <p className="text-[10px] sm:text-[11px] text-slate-300 leading-relaxed font-medium line-clamp-2 sm:line-clamp-none">
+                  <div className="bg-azul-marino text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-industrial border border-white/10 flex flex-col justify-center">
+                    <div className="flex items-center space-x-2 mb-1.5">
+                      <Award className="w-5 h-5 text-celeste-energia flex-shrink-0" />
+                      <h5 className="font-black text-white text-xs sm:text-sm leading-tight">
+                        Certificaciones & Normas
+                      </h5>
+                    </div>
+                    <p className="text-[10px] sm:text-[11px] text-slate-300 leading-relaxed font-medium">
                       Normativas ASTM, ASME, NEC, IEEE y seguridad.
                     </p>
                   </div>
@@ -213,7 +228,7 @@ export default function About() {
               Compromiso y Modalidad Llave en Mano
             </span>
             <blockquote className="text-xs sm:text-xl lg:text-2xl font-bold leading-snug tracking-tight text-white italic">
-              "En nuestra empresa, nos especializamos en el desarrollo de proyectos eléctricos, mecánicos y civiles, asegurando entregas puntuales, cumplimiento presupuestario y excelencia en cada detalle."
+              "Integramos energía, ingeniería e infraestructura para desarrollar soluciones confiables, eficientes y seguras, acompañando cada proyecto desde la planificación y el diseño hasta la ejecución, puesta en marcha y soporte operativo."
             </blockquote>
             <div className="mt-3 sm:mt-4 flex items-center space-x-2 sm:space-x-3 text-xs sm:text-sm text-celeste-energia font-semibold">
               <span className="h-0.5 w-4 sm:w-6 bg-celeste-energia" />
@@ -286,6 +301,7 @@ export default function About() {
                     src={thumb.src} 
                     alt={thumb.title} 
                     loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" 
                   />
                 </div>

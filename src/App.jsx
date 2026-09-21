@@ -11,6 +11,9 @@ import WhatsAppButton from './components/WhatsAppButton';
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gris-pizarra font-montserrat flex flex-col selection:bg-celeste-energia selection:text-azul-marino relative">
+      {/* Anchor for top of page (Inicio) */}
+      <div id="inicio" className="absolute top-0 left-0 w-full h-0 pointer-events-none" />
+
       {/* Skip to Content for Accessibility */}
       <a 
         href="#nosotros" 
