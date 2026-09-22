@@ -27,7 +27,7 @@ export default function Contact() {
                   DAIM S.A.S.
                 </span>
                 <span className="text-[8px] sm:text-[9px] text-celeste-energia uppercase tracking-wider font-bold block">
-                  INGENIERÍA · ENERGÍA · INFRAESTRUCTURA
+                  ENERGY · ENGINEERING · INFRASTRUCTURE · O&M
                 </span>
               </div>
             </div>
@@ -147,10 +147,6 @@ export default function Contact() {
                 <span className="w-1.5 h-1.5 bg-celeste-energia inline-block flex-shrink-0" />
                 <span>Infraestructura & Construcción</span>
               </li>
-              <li className="flex items-center space-x-2">
-                <span className="w-1.5 h-1.5 bg-amarillo-seguridad inline-block flex-shrink-0" />
-                <span>Commercial & Industrial Energy</span>
-              </li>
             </ul>
           </div>
 
@@ -159,7 +155,7 @@ export default function Contact() {
         {/* Bottom Legal & Copyright Bar */}
         <div className="mt-8 pt-6 sm:mt-12 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-[10px] sm:text-[11px] text-slate-400 text-center sm:text-left">
           <p>
-            © {currentYear} DAIM S.A.S. (INGENIERÍA · ENERGÍA · INFRAESTRUCTURA). Todos los derechos reservados.
+            © {currentYear} DAIM S.A.S. (ENERGY · ENGINEERING · INFRASTRUCTURE · O&M). Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-3 sm:space-x-4">
             <span>Quito · Caracas · Madrid</span>

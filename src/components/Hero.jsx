@@ -92,7 +92,7 @@ export default function Hero() {
               <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2">
                 Generación & Soluciones de Potencia
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify hyphens-auto">
                 Turbinas, generadores, BESS, generación modular y soluciones energéticas integradas.
               </p>
             </div>
@@ -121,7 +121,7 @@ export default function Hero() {
               <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2 whitespace-nowrap">
                 Ingeniería & Ejecución EPC
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify hyphens-auto">
                 Ingeniería conceptual, básica y de detalle, procura, construcción y puesta en marcha.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function Hero() {
               <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2 whitespace-nowrap">
                 Infraestructura Eléctrica
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify hyphens-auto">
                 Subestaciones, transmisión, distribución, media y baja tensión, protección y control.
               </p>
             </div>
@@ -180,7 +180,7 @@ export default function Hero() {
                 <span className="block">Operación, Mantenimiento</span>
                 <span className="block">& Servicios Industriales</span>
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-balance">
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify hyphens-auto">
                 Mantenimiento preventivo, predictivo y correctivo, soporte técnico de planta, modernizaciones y montajes.
               </p>
             </div>

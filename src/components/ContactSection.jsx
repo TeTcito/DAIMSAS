@@ -276,7 +276,7 @@ export default function ContactSection() {
                 <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-azul-daim/10 border border-azul-daim/30 flex items-center justify-center flex-shrink-0 text-azul-daim group-hover:scale-105 transition-transform">
                   <AtSign className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <div className="overflow-hidden">
+                <div className="overflow-hidden space-y-0.5">
                   <a 
                     href="mailto:jesusmendez.dai@gmail.com" 
                     className="block text-xs sm:text-base font-black tracking-tight text-azul-marino hover:text-azul-daim transition-colors truncate" 
@@ -286,7 +286,7 @@ export default function ContactSection() {
                   </a>
                   <a 
                     href="mailto:gerencia@daimenergy.com" 
-                    className="block text-[11px] sm:text-xs text-slate-500 font-semibold hover:text-azul-daim transition-colors truncate" 
+                    className="block text-xs sm:text-base font-black tracking-tight text-azul-marino hover:text-azul-daim transition-colors truncate" 
                     title="gerencia@daimenergy.com"
                   >
                     gerencia@daimenergy.com
@@ -334,7 +334,7 @@ export default function ContactSection() {
             <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
               <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Presencia:</span>
               <span className="font-extrabold text-azul-daim uppercase tracking-wider text-[10px] sm:text-[11px]">
-                Ecuador & Internacional
+                Nacional e Internacional
               </span>
             </div>
           </div>

@@ -164,8 +164,8 @@ export default function MissionExperience() {
               <div className="group relative overflow-hidden border border-white/10 bg-black/30 rounded-lg sm:rounded-none flex flex-col justify-between">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img 
-                    src="/assets/project-piping.webp" 
-                    alt="Piping & Sistemas de Proceso DAIM" 
+                    src="/assets/service-turbine-power.webp" 
+                    alt="Turbinas & Gestión Integral de Suministro DAIM" 
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -174,13 +174,13 @@ export default function MissionExperience() {
                 <div className="p-3 sm:p-4 bg-azul-marino-card border-t border-white/10 flex-grow flex flex-col justify-between">
                   <div>
                     <span className="text-[9px] sm:text-[10px] text-celeste-energia font-extrabold uppercase tracking-wider block mb-1">
-                      INDUSTRIAL SERVICES
+                      ENERGY & POWER
                     </span>
                     <h4 className="text-xs sm:text-sm font-black text-white leading-snug mb-1">
-                      Piping & Sistemas de Proceso
+                      Turbinas & Gestión Integral de Suministro
                     </h4>
                     <p className="text-[11px] text-slate-300 leading-relaxed font-normal">
-                      Tuberías industriales, válvulas, montaje electromecánico y soporte técnico para instalaciones de proceso.
+                      Selección técnica, adquisición, logística, traslado y almacenamiento temporal de turbinas para proyectos de generación eléctrica.
                     </p>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ export default function MissionExperience() {
               <h3 className="text-lg sm:text-2xl font-black text-azul-marino mb-2 sm:mb-4">
                 Integrar Energía, Ingeniería e Infraestructura
               </h3>
-              <p className="text-slate-700 text-xs sm:text-base leading-relaxed italic">
+              <p className="text-slate-700 text-xs sm:text-base leading-relaxed italic text-justify">
                 "Desarrollar soluciones integrales de energía, ingeniería, infraestructura y O&M, combinando capacidad técnica, seguridad, eficiencia y gestión responsable para generar valor sostenible en cada proyecto."
               </p>
             </div>
@@ -232,7 +232,7 @@ export default function MissionExperience() {
               <h3 className="text-lg sm:text-2xl font-black text-azul-marino mb-2 sm:mb-4">
                 Crecer como Integrador Técnico y Energético
               </h3>
-              <p className="text-slate-700 text-xs sm:text-base leading-relaxed italic">
+              <p className="text-slate-700 text-xs sm:text-base leading-relaxed italic text-justify">
                 "Consolidar a DAIM como una empresa referente en soluciones de energía, infraestructura eléctrica, ingeniería EPC y servicios industriales, reconocida por su capacidad técnica, confiabilidad, innovación y compromiso con el desarrollo sostenible."
               </p>
             </div>
@@ -246,19 +246,19 @@ export default function MissionExperience() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               <div className="border-l-2 border-celeste-energia pl-3 sm:pl-4">
-                <span className="text-amarillo-seguridad font-black text-[11px] sm:text-xs uppercase tracking-wider block mb-1">
+                <span className="text-white font-black text-[11px] sm:text-xs uppercase tracking-wider block mb-1">
                   01 · INGENIERÍA & PLANIFICACIÓN
                 </span>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed text-justify">
                   Desarrollo técnico desde etapas tempranas para definir soluciones eficientes, optimizar recursos y reducir riesgos durante la ejecución.
                 </p>
               </div>
 
               <div className="border-l-2 border-celeste-energia pl-3 sm:pl-4">
-                <span className="text-celeste-energia font-black text-[11px] sm:text-xs uppercase tracking-wider block mb-1">
+                <span className="text-white font-black text-[11px] sm:text-xs uppercase tracking-wider block mb-1">
                   02 · CALIDAD & SEGURIDAD
                 </span>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed text-justify">
                   Aplicación de criterios técnicos, control de calidad y buenas prácticas de seguridad durante todo el ciclo del proyecto.
                 </p>
               </div>
@@ -267,7 +267,7 @@ export default function MissionExperience() {
                 <span className="text-white font-black text-[11px] sm:text-xs uppercase tracking-wider block mb-1">
                   03 · INNOVACIÓN & MEJORA CONTINUA
                 </span>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed text-justify">
                   Integración de nuevas tecnologías, metodologías y soluciones energéticas para mejorar el desempeño y la confiabilidad de cada proyecto.
                 </p>
               </div>
