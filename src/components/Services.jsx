@@ -104,8 +104,8 @@ export default function Services() {
               Nuestros Servicios Especializados
             </h2>
           </div>
-          <p className="text-slate-300 text-xs sm:text-base max-w-xl mt-2 sm:mt-4 md:mt-0 font-normal leading-relaxed text-justify">
-            Soluciones integrales de ingeniería eléctrica, mecánica, civil y renovables llave en mano.
+          <p className="text-slate-300 text-xs sm:text-base max-w-xl mt-2 sm:mt-4 md:mt-0 font-normal leading-relaxed text-left">
+            Soluciones integrales en generación de energía, infraestructura eléctrica, ingeniería EPC y servicios industriales, desde la conceptualización hasta la puesta en marcha.
           </p>
         </div>
 
@@ -196,8 +196,8 @@ export default function Services() {
               <h4 className="text-sm sm:text-base font-black text-white uppercase tracking-wider mb-0.5 sm:mb-1">
                 Garantía de Continuidad Operativa
               </h4>
-              <p className="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
-                Metodologías de trabajo seguro para minimizar paradas imprevistas y maximizar la vida útil de sus activos.
+              <p className="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed text-left">
+                Aplicamos soluciones de ingeniería y metodologías de trabajo seguro para minimizar paradas no programadas, optimizar el rendimiento y prolongar la vida útil de sus activos industriales.
               </p>
             </div>
           </div>

@@ -50,7 +50,7 @@ export default function MissionExperience() {
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
               Capacidades desarrolladas por nuestro equipo
             </h2>
-            <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed text-justify">
+            <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed text-left">
               Soluciones integrales de ingeniería aplicada, infraestructura energética y soporte técnico industrial especializado.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function MissionExperience() {
                     <h3 className="font-extrabold text-sm sm:text-base text-azul-marino mb-1.5 sm:mb-2 leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed text-justify">
+                    <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed text-left">
                       {item.desc}
                     </p>
                   </div>

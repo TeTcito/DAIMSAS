@@ -356,48 +356,6 @@ export default function ContactSection() {
               src="https://maps.google.com/maps?q=La%20Morita,%20Tumbaco,%20Quito,%20Ecuador&t=&z=14&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full filter contrast-[1.02]"
             />
-
-            {/* Tarjeta flotante simulada estilo Google Maps con los datos reales de DAIM S.A.S. */}
-            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-white p-2.5 sm:p-4 rounded-xl sm:rounded-2xl shadow-industrial-lg border border-slate-200/90 max-w-[250px] sm:max-w-xs z-10">
-              <div className="flex items-start justify-between gap-2">
-                <div>
-                  <h5 className="font-black text-xs sm:text-sm text-azul-marino leading-snug">
-                    DAIM S.A.S.
-                  </h5>
-                  <p className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 leading-tight">
-                    Sede: La Morita, Tumbaco, Quito
-                  </p>
-                  <div className="flex items-center space-x-1 mt-1 text-[11px] text-amber-500 font-bold">
-                    <span>5.0</span>
-                    <span>★★★★★</span>
-                    <span className="text-azul-daim font-bold text-[10px] ml-1">Ingeniería & Energía</span>
-                  </div>
-                  <a 
-                    href="https://maps.google.com/?q=La+Morita,+Tumbaco,+Quito,+Ecuador" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-block text-[10px] sm:text-[11px] text-azul-daim font-bold hover:underline mt-1"
-                  >
-                    Ver mapa ampliado
-                  </a>
-                </div>
-
-                {/* Botón de Cómo Llegar / Ruta */}
-                <a
-                  href="https://maps.google.com/maps/dir//La+Morita,+Tumbaco,+Quito,+Ecuador"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center justify-center text-azul-daim hover:text-azul-daim-hover flex-shrink-0 group p-1"
-                >
-                  <div className="w-8 h-8 rounded-full bg-azul-daim/10 group-hover:bg-azul-daim group-hover:text-white flex items-center justify-center transition-colors">
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                      <path d="M21.71 11.29l-9-9a1 1 0 00-1.42 0l-9 9a1 1 0 000 1.42l9 9a1 1 0 001.42 0l9-9a1 1 0 001.42 0l9-9a1 1 0 000-1.42zm-10.71 7.3L4.41 12 11 5.41V10h4v5h-4v3.59z"/>
-                    </svg>
-                  </div>
-                  <span className="text-[9px] font-bold text-azul-daim mt-0.5">Ruta</span>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 

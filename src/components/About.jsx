@@ -190,7 +190,7 @@ export default function About() {
                       <p className="text-xs font-bold text-celeste-energia mt-0.5 mb-2">
                         Proyectos desarrollados por nuestro equipo
                       </p>
-                      <p className="text-[11px] text-slate-100 leading-relaxed font-normal text-justify">
+                      <p className="text-[11px] text-slate-100 leading-relaxed font-normal text-left">
                         Experiencia acumulada en ingeniería, energía, infraestructura eléctrica, construcción y mantenimiento industrial.
                       </p>
                     </div>
@@ -199,16 +199,16 @@ export default function About() {
                     </div>
                   </div>
 
-                  {/* Caja 2 Azul Marino Profundo: Certificaciones & Normas */}
+                  {/* Caja 2 Azul Marino Profundo: Excelencia Técnica y Normativa */}
                   <div className="bg-azul-marino text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-industrial border border-white/10 flex flex-col justify-center">
                     <div className="flex items-center space-x-2 mb-1.5">
-                      <Award className="w-5 h-5 text-celeste-energia flex-shrink-0" />
+                      <ShieldCheck className="w-5 h-5 text-celeste-energia flex-shrink-0" />
                       <h5 className="font-black text-white text-xs sm:text-sm leading-tight">
-                        Certificaciones & Normas
+                        Excelencia Técnica y Normativa
                       </h5>
                     </div>
-                    <p className="text-[10px] sm:text-[11px] text-slate-300 leading-relaxed font-medium">
-                      Normativas ASTM, ASME, NEC, IEEE y seguridad.
+                    <p className="text-[10px] sm:text-[11px] text-slate-300 leading-relaxed font-medium text-left">
+                      Ingeniería y ejecución bajo estándares internacionales ASTM, ASME, NEC e IEEE, priorizando la seguridad, la calidad y la confiabilidad en cada proyecto.
                     </p>
                   </div>
 
