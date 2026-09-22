@@ -104,7 +104,7 @@ export default function Services() {
               Nuestros Servicios Especializados
             </h2>
           </div>
-          <p className="text-slate-300 text-xs sm:text-base max-w-xl mt-2 sm:mt-4 md:mt-0 font-normal leading-relaxed">
+          <p className="text-slate-300 text-xs sm:text-base max-w-xl mt-2 sm:mt-4 md:mt-0 font-normal leading-relaxed text-justify">
             Soluciones integrales de ingeniería eléctrica, mecánica, civil y renovables llave en mano.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function Services() {
                     </h3>
 
                     {/* Descripción concisa adaptada en móviles */}
-                    <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed line-clamp-3 sm:line-clamp-none">
+                    <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed line-clamp-3 sm:line-clamp-none text-justify">
                       {srv.desc}
                     </p>
                   </div>

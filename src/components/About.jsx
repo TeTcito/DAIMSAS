@@ -107,7 +107,7 @@ export default function About() {
               </h2>
 
               {/* Párrafo de Apertura Corporativa */}
-              <p className="text-slate-600 text-xs sm:text-base leading-relaxed mb-5 sm:mb-8 max-w-2xl font-normal">
+              <p className="text-slate-600 text-xs sm:text-base leading-relaxed mb-5 sm:mb-8 max-w-2xl font-normal text-justify">
                 DAIM integra experiencia profesional, capacidad técnica y una gestión orientada a la seguridad, la calidad y el cumplimiento. Nuestro equipo ha participado en proyectos de ingeniería, energía, infraestructura eléctrica, construcción y mantenimiento en distintos entornos industriales.
               </p>
 
@@ -126,7 +126,7 @@ export default function About() {
                       <h4 className="font-black text-azul-marino text-sm sm:text-base mb-0.5">
                         Integridad
                       </h4>
-                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal text-justify">
                         Actuamos con transparencia, responsabilidad y compromiso en cada proyecto y relación comercial.
                       </p>
                     </div>
@@ -141,7 +141,7 @@ export default function About() {
                       <h4 className="font-black text-azul-marino text-sm sm:text-base mb-0.5">
                         Seguridad
                       </h4>
-                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal text-justify">
                         Aplicamos criterios de seguridad, prevención y buenas prácticas durante la planificación y ejecución de nuestras actividades.
                       </p>
                     </div>
@@ -156,7 +156,7 @@ export default function About() {
                       <h4 className="font-black text-azul-marino text-sm sm:text-base mb-0.5">
                         Precisión en Ingeniería
                       </h4>
-                      <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                      <p className="text-xs text-slate-600 leading-relaxed font-normal text-justify">
                         Desarrollamos soluciones técnicas basadas en criterios de ingeniería, normativa aplicable y control de calidad.
                       </p>
                     </div>
@@ -190,7 +190,7 @@ export default function About() {
                       <p className="text-xs font-bold text-celeste-energia mt-0.5 mb-2">
                         Proyectos desarrollados por nuestro equipo
                       </p>
-                      <p className="text-[11px] text-slate-100 leading-relaxed font-normal">
+                      <p className="text-[11px] text-slate-100 leading-relaxed font-normal text-justify">
                         Experiencia acumulada en ingeniería, energía, infraestructura eléctrica, construcción y mantenimiento industrial.
                       </p>
                     </div>
@@ -227,7 +227,7 @@ export default function About() {
             <span className="text-amarillo-seguridad font-bold uppercase tracking-widest text-[10px] sm:text-xs block mb-2 sm:mb-3">
               Compromiso y Modalidad Llave en Mano
             </span>
-            <blockquote className="text-xs sm:text-xl lg:text-2xl font-bold leading-snug tracking-tight text-white italic">
+            <blockquote className="text-xs sm:text-xl lg:text-2xl font-bold leading-snug tracking-tight text-white italic text-justify">
               "Integramos energía, ingeniería e infraestructura para desarrollar soluciones confiables, eficientes y seguras, acompañando cada proyecto desde la planificación y el diseño hasta la ejecución, puesta en marcha y soporte operativo."
             </blockquote>
             <div className="mt-3 sm:mt-4 flex items-center space-x-2 sm:space-x-3 text-xs sm:text-sm text-celeste-energia font-semibold">
@@ -267,7 +267,7 @@ export default function About() {
                   <h4 className="font-extrabold text-xs sm:text-base text-azul-marino group-hover:text-azul-daim transition-colors mb-0.5 sm:mb-1">
                     {sec.name}
                   </h4>
-                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed line-clamp-2 sm:line-clamp-none">
+                  <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed line-clamp-2 sm:line-clamp-none text-justify">
                     {sec.desc}
                   </p>
                 </div>

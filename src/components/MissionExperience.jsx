@@ -50,7 +50,7 @@ export default function MissionExperience() {
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
               Capacidades desarrolladas por nuestro equipo
             </h2>
-            <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed">
+            <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed text-justify">
               Soluciones integrales de ingeniería aplicada, infraestructura energética y soporte técnico industrial especializado.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function MissionExperience() {
                     <h3 className="font-extrabold text-sm sm:text-base text-azul-marino mb-1.5 sm:mb-2 leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed">
+                    <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed text-justify">
                       {item.desc}
                     </p>
                   </div>
@@ -127,7 +127,7 @@ export default function MissionExperience() {
                     <h4 className="text-xs sm:text-sm font-black text-white leading-snug mb-1">
                       Sistemas Solares & Soluciones Energéticas
                     </h4>
-                    <p className="text-[11px] text-slate-300 leading-relaxed font-normal">
+                    <p className="text-[11px] text-slate-300 leading-relaxed font-normal text-justify">
                       Diseño, integración e instalación de soluciones fotovoltaicas, sistemas híbridos y almacenamiento energético.
                     </p>
                   </div>
@@ -153,7 +153,7 @@ export default function MissionExperience() {
                     <h4 className="text-xs sm:text-sm font-black text-white leading-snug mb-1">
                       Subestaciones & Sistemas de Potencia
                     </h4>
-                    <p className="text-[11px] text-slate-300 leading-relaxed font-normal">
+                    <p className="text-[11px] text-slate-300 leading-relaxed font-normal text-justify">
                       Subestaciones, transformadores, media y alta tensión, protección, control y sistemas auxiliares.
                     </p>
                   </div>
@@ -179,7 +179,7 @@ export default function MissionExperience() {
                     <h4 className="text-xs sm:text-sm font-black text-white leading-snug mb-1">
                       Turbinas & Gestión Integral de Suministro
                     </h4>
-                    <p className="text-[11px] text-slate-300 leading-relaxed font-normal">
+                    <p className="text-[11px] text-slate-300 leading-relaxed font-normal text-justify">
                       Selección técnica, adquisición, logística, traslado y almacenamiento temporal de turbinas para proyectos de generación eléctrica.
                     </p>
                   </div>

@@ -41,7 +41,7 @@ export default function Hero() {
           </h1>
 
           {/* Texto de presentación corporativa DAIM */}
-          <p className="text-slate-200 text-xs sm:text-base lg:text-lg font-normal leading-relaxed mb-5 sm:mb-8 max-w-2xl text-shadow-sm">
+          <p className="text-slate-200 text-xs sm:text-base lg:text-lg font-normal leading-relaxed mb-5 sm:mb-8 max-w-2xl text-shadow-sm text-justify">
             Integramos energía, ingeniería e infraestructura para desarrollar soluciones de generación, sistemas eléctricos, EPC y O&M, incorporando tecnología, equipos y servicios especializados para proyectos industriales y energéticos.
           </p>
 

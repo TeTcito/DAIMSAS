@@ -13,26 +13,24 @@ export default function Contact() {
           {/* Logo & Corporate Identity */}
           <div className="md:col-span-5 space-y-3 sm:space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="bg-white px-2.5 py-1.5 inline-block rounded-sm">
-                <img 
-                  src="/assets/logo-daim.webp" 
-                  alt="DAIM S.A.S." 
-                  className="h-9 sm:h-11 md:h-12 w-auto object-contain" 
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div>
+              <img 
+                src="/assets/logo-daim-white.webp" 
+                alt="DAIM S.A.S." 
+                className="h-10 sm:h-12 md:h-14 w-auto object-contain" 
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="leading-tight text-left pl-2.5 border-l border-white/20">
                 <span className="font-black text-base sm:text-lg text-white block leading-tight">
                   DAIM S.A.S.
                 </span>
-                <span className="text-[8px] sm:text-[9px] text-celeste-energia uppercase tracking-wider font-bold block">
+                <span className="text-[8px] sm:text-[9px] md:text-[9.5px] text-celeste-energia uppercase tracking-wider font-bold block">
                   ENERGY · ENGINEERING · INFRASTRUCTURE · O&M
                 </span>
               </div>
             </div>
 
-            <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
+            <p className="text-xs text-slate-400 max-w-sm leading-relaxed text-justify">
               Integramos ingeniería, suministro, construcción y soporte técnico para proyectos de energía, infraestructura eléctrica e instalaciones industriales en Ecuador y la región.
             </p>
 

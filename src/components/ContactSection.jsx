@@ -52,7 +52,7 @@ export default function ContactSection() {
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-azul-marino tracking-tight">
             Contáctanos
           </h2>
-          <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed">
+          <p className="text-slate-600 text-xs sm:text-base mt-1.5 sm:mt-2 max-w-2xl leading-relaxed text-justify">
             Cuéntanos sobre los requerimientos técnicos de tu empresa. Nuestro equipo de ingeniería evaluará tu proyecto sin demoras.
           </p>
         </div>
@@ -160,7 +160,7 @@ export default function ContactSection() {
                 <h3 className="text-xl sm:text-3xl font-black text-white tracking-tight mb-1 sm:mb-2">
                   Redes Sociales
                 </h3>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal line-clamp-2 sm:line-clamp-none">
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed font-normal line-clamp-2 sm:line-clamp-none text-justify">
                   Conéctate con DAIM S.A.S. en nuestras plataformas oficiales. Síguenos para conocer el desarrollo de nuestras obras, soluciones de ingeniería y novedades técnicas.
                 </p>
               </div>
@@ -250,7 +250,7 @@ export default function ContactSection() {
                   +593 983 838 317
                 </h4>
               </div>
-              <p className="text-[11px] sm:text-sm text-slate-300 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-slate-300 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-justify">
                 Atención técnica directa, cotizaciones inmediatas y coordinación operativa para proyectos industriales y emergencias de planta.
               </p>
             </div>
@@ -293,7 +293,7 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-justify">
                 Recepción formal de pliegos de contratación, términos de referencia (TDR), requerimientos de procura y especificaciones de proyectos.
               </p>
             </div>
@@ -326,7 +326,7 @@ export default function ContactSection() {
                   </p>
                 </div>
               </div>
-              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none">
+              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-justify">
                 Sede principal en La Morita, Tumbaco (Quito, Ecuador) con presencia y alcance operativo en Caracas (Venezuela) y Madrid (España).
               </p>
             </div>
