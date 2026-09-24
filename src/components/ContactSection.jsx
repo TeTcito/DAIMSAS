@@ -240,28 +240,35 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-6 mt-6 sm:mt-8">
           
           {/* Card 1: Teléfono */}
-          <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-8 bg-gradient-to-br from-azul-marino to-azul-marino-card text-white shadow-industrial border-l-4 border-amarillo-seguridad flex flex-col justify-between group hover:border-celeste-energia transition-all">
+          <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-8 bg-white border-2 border-slate-200 shadow-sm hover:border-celeste-energia transition-all flex flex-col justify-between text-azul-marino group">
             <div>
               <div className="flex items-center space-x-3 mb-2 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 border border-amarillo-seguridad/40 flex items-center justify-center flex-shrink-0 text-amarillo-seguridad group-hover:scale-105 transition-transform">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-50 border-2 border-azul-marino flex items-center justify-center flex-shrink-0 text-azul-marino group-hover:scale-105 transition-transform">
                   <Smartphone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
-                <h4 className="text-sm sm:text-lg lg:text-xl font-black tracking-tight text-white truncate whitespace-nowrap">
-                  +593 983 838 317
-                </h4>
+                <div className="overflow-hidden">
+                  <h4 className="text-xs sm:text-base lg:text-lg font-black tracking-tight text-azul-marino truncate whitespace-nowrap">
+                    <a href="tel:+593983838317" className="hover:text-azul-daim transition-colors">
+                      +593 983 838 317
+                    </a>
+                  </h4>
+                  <p className="text-[11px] sm:text-xs text-slate-500 font-semibold truncate">
+                    Atención Técnica & Operativa
+                  </p>
+                </div>
               </div>
-              <p className="text-[11px] sm:text-sm text-slate-300 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-justify">
+              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-left">
                 Atención técnica directa, cotizaciones inmediatas y coordinación operativa para proyectos industriales y emergencias de planta.
               </p>
             </div>
 
-            <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-white/15 flex items-center justify-between text-xs text-white">
-              <span className="font-semibold text-slate-300 text-[10px] sm:text-xs">Línea Directa / WhatsApp:</span>
+            <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Línea Directa / WhatsApp:</span>
               <a 
                 href="https://wa.me/593983838317" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="font-extrabold text-amarillo-seguridad hover:text-white uppercase tracking-wider text-[10px] sm:text-[11px] transition-colors inline-flex items-center space-x-1"
+                className="font-extrabold text-azul-daim hover:text-azul-marino uppercase tracking-wider text-[10px] sm:text-[11px] transition-colors inline-flex items-center space-x-1"
               >
                 <span>Iniciar Chat</span>
                 <ArrowRight className="w-3 h-3 ml-0.5" />
@@ -270,10 +277,10 @@ export default function ContactSection() {
           </div>
 
           {/* Card 2: Correo */}
-          <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-8 bg-[#EDF6FD] border-2 border-[#CBE2F7] text-azul-marino shadow-sm hover:border-azul-daim transition-all flex flex-col justify-between group">
+          <div className="rounded-2xl sm:rounded-3xl p-4 sm:p-8 bg-white border-2 border-slate-200 shadow-sm hover:border-celeste-energia transition-all flex flex-col justify-between text-azul-marino group">
             <div>
               <div className="flex items-center space-x-3 mb-2 sm:mb-4">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-azul-daim/10 border border-azul-daim/30 flex items-center justify-center flex-shrink-0 text-azul-daim group-hover:scale-105 transition-transform">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-50 border-2 border-azul-marino flex items-center justify-center flex-shrink-0 text-azul-marino group-hover:scale-105 transition-transform">
                   <AtSign className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="overflow-hidden space-y-0.5">
@@ -293,12 +300,12 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-justify">
+              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-left">
                 Recepción formal de pliegos de contratación, términos de referencia (TDR), requerimientos de procura y especificaciones de proyectos.
               </p>
             </div>
 
-            <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-azul-daim/15 flex items-center justify-between text-xs text-azul-marino">
+            <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
               <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Correos Institucionales:</span>
               <a 
                 href="mailto:jesusmendez.dai@gmail.com" 
@@ -326,7 +333,7 @@ export default function ContactSection() {
                   </p>
                 </div>
               </div>
-              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-justify">
+              <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed pl-1 line-clamp-2 sm:line-clamp-none text-left">
                 Sede principal en La Morita, Tumbaco (Quito, Ecuador) con presencia y alcance operativo en Caracas (Venezuela) y Madrid (España).
               </p>
             </div>

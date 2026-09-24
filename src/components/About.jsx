@@ -134,7 +134,7 @@ export default function About() {
 
                   {/* 2. Seguridad */}
                   <div className="flex items-start space-x-3 sm:space-x-3.5">
-                    <div className="p-1.5 sm:p-2 border border-amarillo-seguridad/40 rounded-lg bg-amber-50 text-amber-600 flex-shrink-0 mt-0.5 shadow-sm">
+                    <div className="p-1.5 sm:p-2 border border-azul-daim/30 rounded-lg bg-blue-50 text-azul-daim flex-shrink-0 mt-0.5 shadow-sm">
                       <HardHat className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <div>
@@ -149,7 +149,7 @@ export default function About() {
 
                   {/* 3. Precisión en Ingeniería */}
                   <div className="flex items-start space-x-3 sm:space-x-3.5">
-                    <div className="p-1.5 sm:p-2 border border-celeste-energia/40 rounded-lg bg-sky-50 text-azul-daim flex-shrink-0 mt-0.5 shadow-sm">
+                    <div className="p-1.5 sm:p-2 border border-azul-daim/30 rounded-lg bg-blue-50 text-azul-daim flex-shrink-0 mt-0.5 shadow-sm">
                       <Ruler className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <div>
@@ -199,15 +199,15 @@ export default function About() {
                     </div>
                   </div>
 
-                  {/* Caja 2 Azul Marino Profundo: Excelencia Técnica y Normativa */}
-                  <div className="bg-azul-marino text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-industrial border border-white/10 flex flex-col justify-center">
+                  {/* Caja 2 Azul DAIM: Excelencia Técnica y Normativa */}
+                  <div className="bg-azul-daim text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl shadow-industrial border border-white/20 flex flex-col justify-center">
                     <div className="flex items-center space-x-2 mb-1.5">
-                      <ShieldCheck className="w-5 h-5 text-celeste-energia flex-shrink-0" />
+                      <ShieldCheck className="w-5 h-5 text-amarillo-seguridad flex-shrink-0" />
                       <h5 className="font-black text-white text-xs sm:text-sm leading-tight">
                         Excelencia Técnica y Normativa
                       </h5>
                     </div>
-                    <p className="text-[10px] sm:text-[11px] text-slate-300 leading-relaxed font-medium text-left">
+                    <p className="text-[10px] sm:text-[11px] text-slate-100 leading-relaxed font-normal text-left">
                       Ingeniería y ejecución bajo estándares internacionales ASTM, ASME, NEC e IEEE, priorizando la seguridad, la calidad y la confiabilidad en cada proyecto.
                     </p>
                   </div>
