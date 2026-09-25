@@ -44,9 +44,18 @@ export default function Navbar() {
             </div>
             
             <a 
-              href="mailto:gerencia@daimenergy.com" 
+              href="mailto:info@daimenergy.com" 
               className="flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm hover:border-celeste-energia transition-colors"
-              title="Correo Principal"
+              title="Correo Institucional"
+            >
+              <Mail className="w-3.5 h-3.5 text-slate-300" />
+              <span className="text-slate-200 text-[11px]">info@daimenergy.com</span>
+            </a>
+
+            <a 
+              href="mailto:gerencia@daimenergy.com" 
+              className="hidden lg:flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm hover:border-celeste-energia transition-colors"
+              title="Correo Gerencia"
             >
               <Mail className="w-3.5 h-3.5 text-slate-300" />
               <span className="text-slate-200 text-[11px]">gerencia@daimenergy.com</span>
@@ -54,7 +63,7 @@ export default function Navbar() {
 
             <a 
               href="mailto:jesusmendez.dai@gmail.com" 
-              className="hidden xl:flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm hover:border-celeste-energia transition-colors"
+              className="hidden 2xl:flex items-center space-x-2 px-3 py-1 bg-white/5 border border-white/15 rounded-sm hover:border-celeste-energia transition-colors"
               title="Correo Alternativo"
             >
               <Mail className="w-3.5 h-3.5 text-slate-300" />
@@ -215,11 +224,15 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-3.5 h-3.5 text-slate-400" />
-                  <span>gerencia@daimenergy.com</span>
+                  <a href="mailto:info@daimenergy.com" className="hover:text-celeste-energia transition-colors">info@daimenergy.com</a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-3.5 h-3.5 text-slate-400" />
-                  <span>jesusmendez.dai@gmail.com</span>
+                  <a href="mailto:gerencia@daimenergy.com" className="hover:text-celeste-energia transition-colors">gerencia@daimenergy.com</a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-3.5 h-3.5 text-slate-400" />
+                  <a href="mailto:jesusmendez.dai@gmail.com" className="hover:text-celeste-energia transition-colors">jesusmendez.dai@gmail.com</a>
                 </div>
               </div>
 

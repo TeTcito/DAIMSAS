@@ -285,11 +285,11 @@ export default function ContactSection() {
                 </div>
                 <div className="overflow-hidden space-y-0.5">
                   <a 
-                    href="mailto:jesusmendez.dai@gmail.com" 
+                    href="mailto:info@daimenergy.com" 
                     className="block text-xs sm:text-base font-black tracking-tight text-azul-marino hover:text-azul-daim transition-colors truncate" 
-                    title="jesusmendez.dai@gmail.com"
+                    title="info@daimenergy.com"
                   >
-                    jesusmendez.dai@gmail.com
+                    info@daimenergy.com
                   </a>
                   <a 
                     href="mailto:gerencia@daimenergy.com" 
@@ -297,6 +297,13 @@ export default function ContactSection() {
                     title="gerencia@daimenergy.com"
                   >
                     gerencia@daimenergy.com
+                  </a>
+                  <a 
+                    href="mailto:jesusmendez.dai@gmail.com" 
+                    className="block text-xs sm:text-base font-black tracking-tight text-azul-marino hover:text-azul-daim transition-colors truncate" 
+                    title="jesusmendez.dai@gmail.com"
+                  >
+                    jesusmendez.dai@gmail.com
                   </a>
                 </div>
               </div>
@@ -308,7 +315,7 @@ export default function ContactSection() {
             <div className="mt-3 pt-2.5 sm:mt-5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
               <span className="font-semibold text-slate-500 text-[10px] sm:text-xs">Correos Institucionales:</span>
               <a 
-                href="mailto:jesusmendez.dai@gmail.com" 
+                href="mailto:info@daimenergy.com" 
                 className="font-extrabold text-azul-daim hover:text-azul-marino uppercase tracking-wider text-[10px] sm:text-[11px] transition-colors inline-flex items-center space-x-1"
               >
                 <span>Redactar</span>
@@ -360,7 +367,7 @@ export default function ContactSection() {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?q=La%20Morita,%20Tumbaco,%20Quito,%20Ecuador&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=-0.2195,-78.3980&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full filter contrast-[1.02]"
             />
           </div>
