@@ -92,8 +92,8 @@ export default function Hero() {
               <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2">
                 Generación & Soluciones de Potencia
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-right">
-                Turbinas, generadores, BESS, generación modular y soluciones energéticas integradas.
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify [text-justify:inter-word] [text-align-last:left] hyphens-auto text-pretty">
+                Turbinas, gene&shy;ra&shy;do&shy;res, BESS, gene&shy;ra&shy;ción mo&shy;du&shy;lar y so&shy;lu&shy;cio&shy;nes ener&shy;gé&shy;ti&shy;cas in&shy;te&shy;gra&shy;das.
               </p>
             </div>
           </a>
@@ -121,8 +121,8 @@ export default function Hero() {
               <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2 whitespace-nowrap">
                 Ingeniería & Ejecución EPC
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-right">
-                Ingeniería conceptual, básica y de detalle, procura, construcción y puesta en marcha.
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify [text-justify:inter-word] [text-align-last:left] hyphens-auto text-pretty">
+                Inge&shy;nie&shy;ría con&shy;cep&shy;tual, bá&shy;si&shy;ca y de de&shy;ta&shy;lle, pro&shy;cu&shy;ra, cons&shy;truc&shy;ción y pues&shy;ta en mar&shy;cha.
               </p>
             </div>
           </a>
@@ -150,8 +150,8 @@ export default function Hero() {
               <h3 className="text-sm sm:text-base lg:text-[15px] xl:text-[17px] font-black text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] mb-1.5 sm:mb-2 whitespace-nowrap">
                 Infraestructura Eléctrica
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-right">
-                Subestaciones, transmisión, distribución, media y baja tensión, protección y control.
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify [text-justify:inter-word] [text-align-last:left] hyphens-auto text-pretty">
+                Sub&shy;es&shy;ta&shy;cio&shy;nes, trans&shy;mi&shy;sión, dis&shy;tri&shy;bu&shy;ción, me&shy;dia y ba&shy;ja ten&shy;sión, pro&shy;tec&shy;ción y con&shy;trol.
               </p>
             </div>
           </a>
@@ -180,8 +180,8 @@ export default function Hero() {
                 <span className="block">Operación, Mantenimiento</span>
                 <span className="block">& Servicios Industriales</span>
               </h3>
-              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-right">
-                Mantenimiento preventivo, predictivo y correctivo, soporte técnico de planta, modernizaciones y montajes.
+              <p className="text-[11px] sm:text-xs text-white/95 font-medium leading-snug drop-shadow-[0_1px_5px_rgba(0,0,0,0.95)] text-justify [text-justify:inter-word] [text-align-last:left] hyphens-auto text-pretty">
+                Man&shy;te&shy;ni&shy;mien&shy;to pre&shy;ven&shy;ti&shy;vo, pre&shy;dic&shy;ti&shy;vo y co&shy;rrec&shy;ti&shy;vo, so&shy;por&shy;te téc&shy;ni&shy;co de plan&shy;ta, mo&shy;der&shy;ni&shy;za&shy;cio&shy;nes y mon&shy;ta&shy;jes.
               </p>
             </div>
           </a>
